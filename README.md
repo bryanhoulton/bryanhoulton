@@ -1,5 +1,9 @@
-# 👋 Hi. I'm Bryan.
+things to put on this site:
 
-Welcome to my graveyard of personal projects!
-
-[bryanhoulton.com](https://bryanhoulton.com/)
+- my fundamentals
+- my writing
+- my people lists?
+- my work?
+  - orin labs
+  - slate
+- music
