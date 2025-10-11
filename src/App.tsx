@@ -12,10 +12,11 @@ import {
   Routes,
 } from 'react-router-dom';
 
+import Artifacts from './pages/Artifacts';
+import Bids from './pages/Bids';
 import Home from './pages/Home';
 import Music from './pages/Music';
 import People from './pages/People';
-import Predictions from './pages/Predictions';
 import Quotes from './pages/Quotes';
 import Work from './pages/Work';
 
@@ -23,20 +24,47 @@ type NavButton = {
   label: string;
   description: string;
   href: string;
+  component: React.ComponentType;
 };
 
 const navButtons: NavButton[] = [
-  { label: "Home", href: "/", description: "hi :)" },
-  { label: "Work", href: "/work", description: "where i spend my time" },
+  { label: "Home", href: "/", description: "hi :)", component: Home },
+  {
+    label: "Work",
+    href: "/work",
+    description: "where i spend my time",
+    component: Work,
+  },
+
+  {
+    label: "Artifacts",
+    href: "/artifacts",
+    description: "proof i existed",
+    component: Artifacts,
+  },
+  {
+    label: "Bids",
+    href: "/bids",
+    description: "i'll pay you to yap",
+    component: Bids,
+  },
+  {
+    label: "People",
+    href: "/people",
+    description: "algorithmic networking",
+    component: People,
+  },
   {
     label: "Quotes",
     href: "/quotes",
-    description: "the quotes i'm thinking about",
+    description: "words that are spicy",
+    component: Quotes,
   },
   {
     label: "Album Wall",
     href: "/music",
-    description: "the music i'm listening to",
+    description: "neural loops go weee",
+    component: Music,
   },
 ];
 
@@ -56,7 +84,10 @@ function App() {
       <div className="absolute inset-0 h-screen bg-white flex flex-col md:block">
         {/* Mobile Header */}
         <div className="md:hidden flex items-center justify-between p-4 border-b border-gray-200 flex-shrink-0">
-          <h1 className="text-2xl font-bold text-gray-900">Bryan Houlton</h1>
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-bold text-gray-900">Bryan Houlton</h1>
+            <span className="text-sm text-gray-500">brhoulton@gmail.com</span>
+          </div>
           <button
             onClick={toggleMobileMenu}
             className="p-2 rounded-lg hover:bg-gray-100"
@@ -117,6 +148,10 @@ function App() {
               Bryan<br></br>Houlton
             </h1>
 
+            <span className="text-sm text-gray-500 px-2 -mt-2">
+              brhoulton@gmail.com
+            </span>
+
             <div className="flex flex-col grow gap-0.5 min-h-0 overflow-y-auto">
               {navButtons.map((button) => (
                 <Link
@@ -140,12 +175,9 @@ function App() {
           </div>
           <div className="col-span-9 min-h-0 h-full py-8 overflow-y-auto bg-white">
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/people" element={<People />} />
-              <Route path="/work" element={<Work />} />
-              <Route path="/music" element={<Music />} />
-              <Route path="/quotes" element={<Quotes />} />
-              <Route path="/predictions" element={<Predictions />} />
+              {navButtons.map((page) => (
+                <Route path={page.href} element={<page.component />} />
+              ))}
             </Routes>
           </div>
         </div>
@@ -153,12 +185,9 @@ function App() {
         {/* Mobile Content Area */}
         <div className="md:hidden flex-1 min-h-0 overflow-y-auto">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/people" element={<People />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/music" element={<Music />} />
-            <Route path="/quotes" element={<Quotes />} />
-            <Route path="/predictions" element={<Predictions />} />
+            {navButtons.map((page) => (
+              <Route path={page.href} element={<page.component />} />
+            ))}
           </Routes>
         </div>
       </div>

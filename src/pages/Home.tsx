@@ -72,7 +72,8 @@ function Home() {
         </p>
 
         <p className="text-gray-700 text-lg">
-          You can find my values{" "}
+          I like forward-thinking & proactive people that are bringing products
+          into people's lives. You can find my values{" "}
           <a
             href="https://glen-plough-111.notion.site/My-Fundamentals-f7cc23e7114c48ca9134267ff49d367e?pvs=74"
             target="_blank"
@@ -83,6 +84,26 @@ function Home() {
           </a>
           .
         </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold mb-2 text-gray-900">
+          Some things I believe
+        </h2>
+
+        <ul className="list-disc list-inside">
+          <li>Decision quality is the best leadership metric</li>
+          <li>Easy companies are just as hard as hard ones</li>
+          <li>Small teams get more done</li>
+          <li>Moving quickly is important</li>
+          <li>Impact over happiness, happiness comes from impact</li>
+          <li>Markets trend toward efficiency but never get there</li>
+          <li>Everything with more than one party is a trade</li>
+          <li>
+            Your first five hires shape your company more than the next fifty
+          </li>
+          <li>You really can just do things</li>
+        </ul>
       </section>
 
       <section className="mb-12">
