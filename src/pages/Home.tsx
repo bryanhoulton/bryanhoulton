@@ -126,6 +126,21 @@ function Home() {
           ))}
         </div>
       </section>
+
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold mb-2 text-gray-900">Affiliations</h2>
+        <p className="text-gray-700 mb-2">
+          I'm lucky to be affiliated with some great people and organizations.
+        </p>
+
+        <ul className="list-disc list-inside">
+          <li>Startup Shell</li>
+          <li>Workshop</li>
+          <li>South Park Commons</li>
+          <li>YC</li>
+          <li>University of Maryland</li>
+        </ul>
+      </section>
     </div>
   );
 }
