@@ -26,7 +26,7 @@ const discoveryQueue: Source[] = [
   {
     name: "Suspended Reason > Friends",
     url: "https://suspendedreason.github.io/",
-    done: false,
+    done: true,
   },
   {
     url: "https://sf2.sh/",
