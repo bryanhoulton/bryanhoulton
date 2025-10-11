@@ -38,6 +38,11 @@ const discoveryQueue: Source[] = [
     done: false,
     name: "FR8",
   },
+  {
+    url: "https://www.livetheresidency.com/about",
+    done: false,
+    name: "The Residency",
+  },
 ];
 
 const toMeet: Person[] = [
@@ -51,6 +56,7 @@ const toMeet: Person[] = [
   { name: "Gavin Leech" },
   { name: "John Collison" },
   { name: "John Phamous" },
+  { name: "Jeffery Wang (Exa)" },
 ];
 
 export default function People() {
