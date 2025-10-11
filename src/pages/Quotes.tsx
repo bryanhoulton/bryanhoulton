@@ -1,6 +1,7 @@
 type Quote = {
   text: string;
   source: string;
+  link?: string;
 };
 
 const quotes: Quote[] = [
@@ -31,6 +32,7 @@ const quotes: Quote[] = [
   {
     text: "We were being told that we somehow must become what we are not, sacrificing what we are, to inherent the masquerade of what we will be.",
     source: "Shane Koyczan",
+    link: "https://www.youtube.com/watch?v=sa1iS1MqUy4",
   },
   {
     text: "Listen earnestly to anything your children want to tell you, no matter what. If you don't listen eagerly to the little stuff when they are little, they won't tell you the big stuff when they are big, because to them all of it has always been big stuff.",
@@ -47,10 +49,12 @@ const quotes: Quote[] = [
   {
     text: "You will wander blindly into the universe's libraries, all hubris, all certainty, and barely be out the door before you realize you didn't understand a damn thing you read. … Nature's imagination is better than yours, and she is under no obligation to make herself comprehensible.",
     source: "exurb1a",
+    link: "https://www.youtube.com/watch?v=0R7EN_GTAlw",
   },
   {
     text: "Close your eyes. Count to one. That's how long forever feels.",
     source: "Kurzgesagt",
+    link: "https://www.youtube.com/watch?v=MBRqu0YOH14",
   },
   {
     text: "You're my friend. Who watched trashy TV with me and puts up with my shit. You're the person I don't need to explain myself to - not when it matters. You see everything I am, and you don't run away from it.",
@@ -75,6 +79,7 @@ const quotes: Quote[] = [
   {
     text: "And I'll use you as a warning sign... that if you talk enough sense then you'll lose your mind.",
     source: "I Found - Amber Run",
+    link: "https://open.spotify.com/track/5zT5cMnMKoyruPj13TQXGx?si=139fc7aec3b8485a",
   },
   {
     text: "There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.",
@@ -98,7 +103,7 @@ const quotes: Quote[] = [
   },
   {
     text: "It's you, sitting with them, looking at the world, trying to solve a problem.",
-    source: "Ed Sims when talking about sales",
+    source: "My grandfather",
   },
   {
     text: "I am the marsh now. I am the feather of an egret. I am every shell washed upon the shore. I am a firefly. You'll see hundreds beckoning far into the dark reaches of the marsh. And that's where you will always find me. Way out yonder. Where the crawdads sing.",
@@ -129,12 +134,13 @@ const quotes: Quote[] = [
     source: "Hiccups Mom, HTTYD",
   },
   {
-    text: "Ten spears go to battle… and nine shatter. Did the war *forge* the one that remained? No, Amaram. All the war did was *identify the spear that would not break*.",
+    text: "Ten spears go to battle… and nine shatter. Did the war forge the one that remained? No, Amaram. All the war did was identify the spear that would not break.",
     source: "Kaladin Stormblessed, Oathbringer, Brandon Sanderson",
   },
   {
-    text: "*By compressing the dull but necessary task of making a living into the smallest possible time, you show respect for* **life**, *and there is something grand about that.*",
+    text: "By compressing the dull but necessary task of making a living into the smallest possible time, you show respect for life, and there is something grand about that.",
     source: "Paul Graham",
+    link: "https://www.paulgraham.com/startuplessons.html",
   },
   {
     text: "@Nicole: \"Kids need parents not friends.\" Yeah and now I don't need a parent and I don't know how to be your friend so visiting is just awkward.",
@@ -147,6 +153,7 @@ const quotes: Quote[] = [
   {
     text: "You want me to wrap us Smash? Like, as a whole? The whole thing? sighs You want me to wrap up all of Smash. It means so much to me, and I really do think it was important. But you're asking me why? … Well, it was a chance for us to be somebody. It was a chance for all of us, to be somebody. And that was a big deal.",
     source: "Smash Melee Documentary",
+    link: "https://youtu.be/jX9hbbA-WP4?t=14902",
   },
   {
     text: "Out beyond the ideas of right and wrongdoing, there is a field. I'll met you there.",
@@ -159,6 +166,7 @@ const quotes: Quote[] = [
   {
     text: "I will only ever love you with my arms behind my back. Because I'm gonna love you heart forward. It's all I know.",
     source: "Nahko and the Medicine for the People",
+    link: "https://open.spotify.com/track/07K1i2by973KAbbQtB846W?si=220c930e42f74299",
   },
   {
     text: "I thought I knew all the people in the world who were asking these questions. Who on Earth are you?",
@@ -198,15 +206,13 @@ const quotes: Quote[] = [
   },
   {
     text: "When I came to meet you at the end of\nthe day I was sure you were going to\ntell me you were leaving when suddenly\nyou took my face in your hands and\nkissed me on the mouth so perfectly and\nby surprise my soul exploded right out\nthe back of my head in a way I've simply\nnever been able to fold or back inside\nnor would I want to",
-    source: "**The Next Comes**, exurb1a",
-  },
-  {
-    text: 'For the first time "Bryan" was mentioned by more people unprompted than any other alumnus. More than Wes. More than Mackenzie. More than Jackson or Pranav or Saurav or Nabeela. Your lore is strong rn.',
-    source: "JN",
+    source: "The Next Comes, exurb1a",
+    link: "https://www.youtube.com/watch?v=o1OsDWT_DUc",
   },
   {
     text: "I want to feel your soft lips, your sharp teeth, Feel your nails in my flesh, your light, your color, your pulseYour sweat, your speed, your muscle, your fleshYour skin, your boneYour shadow, your breath, your bloodYour mouth, your cry shatteredYour heartbeat, your heartbeat, your heartbeatYour heartbeat, your heartbeat. Warm dawn, bodies and breath — I am alive.",
     source: "Woman Is, Lempicka",
+    link: "https://open.spotify.com/track/3Nse8DZcXWKUo1sb6yjDlL?si=7cb80895b48b4f07",
   },
   {
     text: "Thou art God.",
@@ -215,6 +221,7 @@ const quotes: Quote[] = [
   {
     text: "Tout est normal, t'es amoureux, tu n'choisis pas",
     source: "Emma Peters",
+    link: "https://open.spotify.com/track/3k8dP7LHGbsdDHUGliZgnp?si=9a436995133548e4",
   },
   {
     text: "No kids? Your age? In a heartbeat.",
@@ -240,19 +247,25 @@ export default function Quotes() {
 
       <div className="space-y-1 -mx-4">
         {quotes.map((quote, index) => (
-          <div
-            key={index}
-            className="p-4 hover:bg-gray-100 rounded-md transition-all duration-300"
-          >
-            <blockquote className="text-gray-800 text-lg italic leading-relaxed mb-2">
-              "{quote.text}"
-            </blockquote>
-            {quote.source && (
-              <cite className="not-italic text-gray-500 text-sm font-light">
-                — {quote.source}
-              </cite>
-            )}
-          </div>
+          <a href={quote.link} target="_blank" rel="noopener noreferrer">
+            <div
+              key={index}
+              className="p-4 hover:bg-gray-100 rounded-md transition-all duration-300"
+            >
+              <blockquote
+                className={`text-gray-800 text-lg italic leading-relaxed mb-2 ${
+                  quote.link ? "underline" : ""
+                }`}
+              >
+                "{quote.text}"
+              </blockquote>
+              {quote.source && (
+                <cite className="not-italic text-gray-500 text-sm font-light">
+                  — {quote.source}
+                </cite>
+              )}
+            </div>
+          </a>
         ))}
       </div>
     </div>
