@@ -33,6 +33,11 @@ const discoveryQueue: Source[] = [
     done: false,
     name: "SF2",
   },
+  {
+    url: "https://fr8manifes.to/",
+    done: false,
+    name: "FR8",
+  },
 ];
 
 const toMeet: Person[] = [
@@ -45,6 +50,7 @@ const toMeet: Person[] = [
   { name: "Dwarkesh Patel" },
   { name: "Gavin Leech" },
   { name: "John Collison" },
+  { name: "John Phamous" },
 ];
 
 export default function People() {
