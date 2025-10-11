@@ -28,6 +28,11 @@ const discoveryQueue: Source[] = [
     url: "https://suspendedreason.github.io/",
     done: false,
   },
+  {
+    url: "https://sf2.sh/",
+    done: false,
+    name: "SF2",
+  },
 ];
 
 const toMeet: Person[] = [
