@@ -58,7 +58,22 @@ function Home() {
         <p className="text-lg mb-3 text-gray-700">
           I'm never satisfied & continuously try to learn the unlearned.
         </p>
-        <p className="text-lg text-gray-700 mb-3">
+
+        <p className="text-gray-700 text-lg mb-3">
+          I like forward-thinking people that have a good split between "doing"
+          and "thinking". You can find my values{" "}
+          <a
+            href="https://glen-plough-111.notion.site/My-Fundamentals-f7cc23e7114c48ca9134267ff49d367e?pvs=74"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
+          >
+            here
+          </a>
+          .
+        </p>
+
+        <p className="text-lg text-gray-700">
           Currently all of my cognitive cycles are going into{" "}
           <a
             href="https://orinlabs.org"
@@ -69,20 +84,6 @@ function Home() {
             Orin Labs
           </a>{" "}
           where we're solving teaching.
-        </p>
-
-        <p className="text-gray-700 text-lg">
-          I like forward-thinking & proactive people that are bringing products
-          into people's lives. You can find my values{" "}
-          <a
-            href="https://glen-plough-111.notion.site/My-Fundamentals-f7cc23e7114c48ca9134267ff49d367e?pvs=74"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
-          >
-            here
-          </a>
-          .
         </p>
       </section>
 

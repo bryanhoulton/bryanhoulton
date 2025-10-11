@@ -24,6 +24,8 @@ const work: Work[] = [
         <a
           href="https://orinlabs.org/hiring"
           className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           hiring
         </a>
