@@ -30,7 +30,7 @@ const discoveryQueue: Source[] = [
   },
   {
     url: "https://sf2.sh/",
-    done: false,
+    done: true,
     name: "SF2",
   },
   {
@@ -42,6 +42,11 @@ const discoveryQueue: Source[] = [
     url: "https://www.livetheresidency.com/about",
     done: false,
     name: "The Residency",
+  },
+  {
+    url: "https://joinarcadia.org/",
+    done: false,
+    name: "Arcadia",
   },
 ];
 
@@ -57,6 +62,7 @@ const toMeet: Person[] = [
   { name: "John Collison" },
   { name: "John Phamous" },
   { name: "Jeffery Wang (Exa)" },
+  { name: "Ivan Yevenko" },
 ];
 
 export default function People() {
