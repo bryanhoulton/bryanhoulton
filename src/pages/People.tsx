@@ -63,7 +63,7 @@ export default function People() {
   return (
     <div className="flex flex-col gap-8 p-6 max-w-2xl">
       <div className="flex flex-col gap-4">
-        <h3 className="text-7xl font-bold">Graphs</h3>
+        <h3 className="text-7xl font-bold">People</h3>
         <p className="text-lg text-gray-700">
           High agency people tend to congregate together. If you find one,
           you'll probably find more. I use this page to algorithmically expand
