@@ -21,7 +21,7 @@ const discoveryQueue: Source[] = [
   {
     name: "Emergent Ventures Cohorts",
     url: "https://marginalrevolution.com/?s=cohort",
-    done: false,
+    done: true,
   },
   {
     name: "Suspended Reason > Friends",
