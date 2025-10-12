@@ -60,8 +60,11 @@ function Home() {
         </p>
 
         <p className="text-gray-700 text-lg mb-3">
-          I like forward-thinking people that have a good split between "doing"
-          and "thinking". You can find my values{" "}
+          I like optimistic people that have a good split between "doing" and
+          "thinking". I think ~80/20 is optimal.
+        </p>
+        <p className="text-gray-700 text-lg mb-3">
+          You can find my values{" "}
           <a
             href="https://glen-plough-111.notion.site/My-Fundamentals-f7cc23e7114c48ca9134267ff49d367e?pvs=74"
             target="_blank"
@@ -72,19 +75,6 @@ function Home() {
           </a>
           .
         </p>
-
-        <p className="text-lg text-gray-700">
-          Currently all of my cognitive cycles are going into{" "}
-          <a
-            href="https://orinlabs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
-          >
-            Orin Labs
-          </a>{" "}
-          where we're solving teaching.
-        </p>
       </section>
 
       <section className="mb-12">
@@ -93,7 +83,6 @@ function Home() {
         </h2>
 
         <ul className="list-disc list-inside">
-          <li>Optimism is the best strategy</li>
           <li>Decision quality is the best leadership metric</li>
           <li>Easy companies are just as hard as hard ones</li>
           <li>Small teams get more done</li>
