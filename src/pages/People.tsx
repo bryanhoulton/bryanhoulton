@@ -78,6 +78,7 @@ const toMeet: Person[] = [
   { name: "John Phamous" },
   { name: "Jeffery Wang (Exa)" },
   { name: "Ivan Yevenko" },
+  { name: "Alexey Guzey" },
 ];
 
 export default function People() {
