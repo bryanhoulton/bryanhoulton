@@ -93,6 +93,7 @@ function Home() {
         </h2>
 
         <ul className="list-disc list-inside">
+          <li>Optimism is the best strategy</li>
           <li>Decision quality is the best leadership metric</li>
           <li>Easy companies are just as hard as hard ones</li>
           <li>Small teams get more done</li>
