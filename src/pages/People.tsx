@@ -54,9 +54,9 @@ const discoveryQueue: Source[] = [
     name: "Maxx Yung's List",
   },
   {
-    url: "https://www.huxley.sh/",
+    url: "https://www.jklsnt.com/",
     done: false,
-    name: "Huxley & Friends",
+    name: "sanity",
   },
 ];
 
