@@ -58,6 +58,11 @@ const discoveryQueue: Source[] = [
     done: false,
     name: "sanity",
   },
+  {
+    url: "https://www.776.org/fellows",
+    done: false,
+    name: "776 Fellows",
+  },
 ];
 
 const toMeet: Person[] = [
