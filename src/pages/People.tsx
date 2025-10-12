@@ -48,6 +48,11 @@ const discoveryQueue: Source[] = [
     done: false,
     name: "Arcadia",
   },
+  {
+    url: "https://brain.maxxyung.com/lists/talent",
+    done: false,
+    name: "Maxx Yung's List",
+  },
 ];
 
 const toMeet: Person[] = [
