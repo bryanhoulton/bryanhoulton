@@ -53,6 +53,11 @@ const discoveryQueue: Source[] = [
     done: false,
     name: "Maxx Yung's List",
   },
+  {
+    url: "https://www.huxley.sh/",
+    done: false,
+    name: "Huxley & Friends",
+  },
 ];
 
 const toMeet: Person[] = [
