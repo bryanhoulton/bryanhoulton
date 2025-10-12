@@ -19,7 +19,7 @@ const artifacts: Artifact[] = [
           className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
         >
           my own library
-        </a>
+        </a>{" "}
         for personal and professional use.
       </p>
     ),
