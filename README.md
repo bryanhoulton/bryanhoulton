@@ -1,9 +1,3 @@
-things to put on this site:
+human learning
 
-- my fundamentals
-- my writing
-- my people lists?
-- my work?
-  - orin labs
-  - slate
-- music
+[bryanhoulton.com](https://bryanhoulton.com)
