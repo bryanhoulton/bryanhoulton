@@ -1,7 +1,7 @@
 import { ExternalLink } from 'lucide-react';
 
-import acadiaImage from '../assets/acadia.png';
 import manateeImage from '../assets/manatee.png';
+import orinImage from '../assets/orin.png';
 import startupShellImage from '../assets/shell.png';
 
 type Work = {
@@ -17,7 +17,7 @@ const work: Work[] = [
     name: "Orin Labs",
     dateRange: "2025-now",
     href: "https://orinlabs.org",
-    image: acadiaImage,
+    image: orinImage,
     description: (
       <p className="text-gray-700">
         Solving teaching. We're{" "}
