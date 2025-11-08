@@ -1,7 +1,7 @@
 import { ExternalLink } from 'lucide-react';
 
 import manateeImage from '../assets/manatee.png';
-import orinImage from '../assets/orin.png';
+import orinImage from '../assets/orinlabs.png';
 import startupShellImage from '../assets/shell.png';
 
 type Work = {
