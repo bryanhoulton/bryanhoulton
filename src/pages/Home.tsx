@@ -1,12 +1,12 @@
-import alamoImage from '../assets/alamo.jpeg';
-import boardImage from '../assets/board.jpeg';
-import bugsImage from '../assets/bugs.jpg';
-import bugsImage2 from '../assets/bugs2.jpeg';
-import parkImage from '../assets/park.jpg';
-import prImage from '../assets/pr.jpeg';
-import sparkImage from '../assets/spark.jpeg';
-import squatImage from '../assets/squat.jpeg';
-import tillieImage from '../assets/tillie.jpeg';
+import alamoImage from "../assets/alamo.jpeg";
+import boardImage from "../assets/board.jpeg";
+import bugsImage from "../assets/bugs.jpg";
+import bugsImage2 from "../assets/bugs2.jpeg";
+import parkImage from "../assets/park.jpg";
+import prImage from "../assets/pr.jpeg";
+import sparkImage from "../assets/spark.jpeg";
+import squatImage from "../assets/squat.jpeg";
+import tillieImage from "../assets/tillie.jpeg";
 
 type GalleryImage = {
   src: string;
@@ -56,22 +56,14 @@ function Home() {
       <section className="flex flex-col py-6 max-w-2xl mb-6">
         <h1 className="text-7xl font-bold mb-4">Hello!</h1>
         <p className="text-lg mb-3 text-gray-700">
-          I'm never satisfied & continuously try to learn the unlearned.
-        </p>
-
-        <p className="text-gray-700 text-lg mb-3">
-          I like optimistic people that have a good split between "doing" and
-          "thinking". I think ~80/20 is optimal.
-        </p>
-        <p className="text-gray-700 text-lg mb-3">
-          You can find my values{" "}
+          I'm Bryan. I believe in{" "}
           <a
-            href="https://glen-plough-111.notion.site/My-Fundamentals-f7cc23e7114c48ca9134267ff49d367e?pvs=74"
+            href="https://aerial-plot-f62.notion.site/Make-Life-Great-2bfa1073e60e80edb1aac13fa3927a8e"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
           >
-            here
+            making life great
           </a>
           .
         </p>
@@ -79,7 +71,7 @@ function Home() {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-2 text-gray-900">
-          Some things I believe
+          Some other things I believe
         </h2>
 
         <ul className="list-disc list-inside">
