@@ -1,12 +1,12 @@
-import alamoImage from "../assets/alamo.jpeg";
-import boardImage from "../assets/board.jpeg";
-import bugsImage from "../assets/bugs.jpg";
-import bugsImage2 from "../assets/bugs2.jpeg";
-import parkImage from "../assets/park.jpg";
-import prImage from "../assets/pr.jpeg";
-import sparkImage from "../assets/spark.jpeg";
-import squatImage from "../assets/squat.jpeg";
-import tillieImage from "../assets/tillie.jpeg";
+import alamoImage from '../assets/alamo.jpeg';
+import boardImage from '../assets/board.jpeg';
+import bugsImage from '../assets/bugs.jpg';
+import bugsImage2 from '../assets/bugs2.jpeg';
+import parkImage from '../assets/park.jpg';
+import prImage from '../assets/pr.jpeg';
+import sparkImage from '../assets/spark.jpeg';
+import squatImage from '../assets/squat.jpeg';
+import tillieImage from '../assets/tillie.jpeg';
 
 type GalleryImage = {
   src: string;
@@ -58,7 +58,7 @@ function Home() {
         <p className="text-lg mb-3 text-gray-700">
           I'm Bryan. I believe in{" "}
           <a
-            href="https://aerial-plot-f62.notion.site/Make-Life-Great-2bfa1073e60e80edb1aac13fa3927a8e"
+            href="https://glen-plough-111.notion.site/Make-Life-Great-2c164cf8536b80f7bfbcd9903cd16bf0?pvs=74"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
