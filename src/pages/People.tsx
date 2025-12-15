@@ -67,6 +67,7 @@ const discoveryQueue: Source[] = [
 
 const toMeet: Person[] = [
   { name: "David Rosenthal" },
+  { name: "Ben Gilbert" },
   { name: "Kudzo Ahegbebu" },
   { name: "Sholto Douglas" },
   { name: "Claire Birch" },
