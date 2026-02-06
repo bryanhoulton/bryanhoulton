@@ -26,13 +26,13 @@ const bids: Bid[] = [
   {
     name: "Reasons to Be in Space",
     description:
-      "Besides satellites, what's the point of being in space? We need a reason for FAANG to dump billions into space infra.",
+      "Besides satellites, what's the point of being in space? We need a reason for FAANG to dump billions into space infra. Is it data centers?",
     amount: 10.02,
   },
   {
     name: "Duplex Voice Models",
     description:
-      "We need voice models that can i/o data streams asynchronously.",
+      "We need voice models that model reasoning and speech as separate, related channels. If you build this, we will be your first customer.",
     amount: 25.79,
   },
 ];

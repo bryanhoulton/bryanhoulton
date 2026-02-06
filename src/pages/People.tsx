@@ -113,8 +113,10 @@ export default function People() {
 
       <div className="flex flex-col gap-2">
         <div className="flex flex-col gap-1">
-          <h4 className="text-2xl font-bold">Discovery Queue</h4>
-          <p className="text-gray-700">Where I'm looking for new people.</p>
+          <h4 className="text-2xl font-bold">Discovery</h4>
+          <p className="text-gray-700">
+            Non-exhaustive list of where to find cool people
+          </p>
         </div>
         <div className="flex flex-col">
           <ul className="list-disc list-inside">
@@ -126,10 +128,7 @@ export default function People() {
                 rel="noopener noreferrer"
                 className="group flex items-center"
               >
-                <li className="group-hover:underline">
-                  {source.done && "✅ "}
-                  {source.name}
-                </li>
+                <li className="group-hover:underline">{source.name}</li>
                 <ExternalLink className="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-all" />
               </a>
             ))}

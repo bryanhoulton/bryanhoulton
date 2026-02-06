@@ -56,16 +56,8 @@ function Home() {
       <section className="flex flex-col py-6 max-w-2xl mb-6">
         <h1 className="text-7xl font-bold mb-4">Hello!</h1>
         <p className="text-lg mb-3 text-gray-700">
-          I'm Bryan. I believe in{" "}
-          <a
-            href="https://glen-plough-111.notion.site/Make-Life-Great-2c164cf8536b80f7bfbcd9903cd16bf0?pvs=74"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
-          >
-            making life great
-          </a>
-          .
+          I'm Bryan. I believe in scale, free markets, empiricism, and
+          technology levers.
         </p>
       </section>
 
@@ -80,11 +72,7 @@ function Home() {
           <li>Small teams get more done</li>
           <li>Moving quickly is important</li>
           <li>Impact over happiness, happiness comes from impact</li>
-          <li>Markets trend toward efficiency but never get there</li>
-          <li>Everything with more than one party is a trade</li>
-          <li>
-            Your first five hires shape your company more than the next fifty
-          </li>
+          <li>Markets inefficiently trend toward efficiency</li>
           <li>You really can just do things</li>
         </ul>
       </section>

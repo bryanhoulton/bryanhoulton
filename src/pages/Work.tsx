@@ -20,7 +20,7 @@ const work: Work[] = [
     image: orinImage,
     description: (
       <p className="text-gray-700">
-        Solving teaching. We're{" "}
+        Building agents that improve people. We're{" "}
         <a
           href="https://orinlabs.org/hiring"
           className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"

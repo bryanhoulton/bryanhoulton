@@ -26,24 +26,20 @@ const artifacts: Artifact[] = [
     href: "https://ui.bryanhoulton.com",
   },
   {
-    title: "Proactive Agent API",
-    href: "https://proactiveagentcompany.com/",
+    title: "Long-Horizon Agent API",
+    href: "https://www.orinlabs.org/research/long-horizon-agents/",
     content: (
-      <p>An easy way to host proactive agents. Email me for an API key.</p>
+      <p>An easy way to host long-horizon agents. Email me for an API key.</p>
     ),
     date: "fall 2025",
   },
   {
     date: "mid-2025",
-    title: "Generative Interface Abstract Syntax Tree (GIAST)",
+    title: "Stateful UI DSL for LLMs",
     content: (
-      <p>
-        A way for LLMs to output JSON-schema-compliant stateful,
-        design-constrained UI. Shipped with a lexer, parser, and compiler but
-        can be used as structured output type.
-      </p>
+      <p>A DSL for stateful, design-constrained UIs with nice validation</p>
     ),
-    href: "https://giast.vercel.app/",
+    href: "https://ui.orinlabs.org/",
   },
   {
     title: "Tablet",
