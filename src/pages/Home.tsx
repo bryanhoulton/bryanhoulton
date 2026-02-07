@@ -57,8 +57,8 @@ function Home() {
         <h1 className="text-7xl font-bold mb-4">Hello!</h1>
         <p className="text-lg mb-3 text-gray-700">
           I'm Bryan. I believe in scale, free markets, empiricism, and
-          technology levers. Currently I think a lot about memory and continual
-          learning.
+          technology levers. Currently I'm thinking a lot about memory and
+          continual learning.
         </p>
         <p className="text-lg mb-3 text-gray-700">Some good reads:</p>
         <ul className="list-disc list-inside text-gray-700 space-y-1">
