@@ -89,8 +89,7 @@ function Home() {
               rel="noopener noreferrer"
               className="underline hover:text-gray-900"
             >
-              Conditional Memory via Scalable Lookup: A New Axis of Sparsity for
-              Large Language Models
+              Conditional Memory via Scalable Lookup
             </a>
           </li>
         </ul>
