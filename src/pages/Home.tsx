@@ -57,8 +57,43 @@ function Home() {
         <h1 className="text-7xl font-bold mb-4">Hello!</h1>
         <p className="text-lg mb-3 text-gray-700">
           I'm Bryan. I believe in scale, free markets, empiricism, and
-          technology levers.
+          technology levers. Currently I think a lot about memory and continual
+          learning.
         </p>
+        <p className="text-lg mb-3 text-gray-700">Some good reads:</p>
+        <ul className="list-disc list-inside text-gray-700 space-y-1">
+          <li>
+            <a
+              href="https://arxiv.org/abs/2501.00663"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-900"
+            >
+              Titans: Learning to Memorize at Test Time
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://abehrouz.github.io/files/NL.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-900"
+            >
+              Nested Learning: The Illusion of Deep Learning Architecture
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://arxiv.org/abs/2601.07372"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-900"
+            >
+              Conditional Memory via Scalable Lookup: A New Axis of Sparsity for
+              Large Language Models
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section className="mb-12">
