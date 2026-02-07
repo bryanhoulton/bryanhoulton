@@ -26,6 +26,17 @@ const artifacts: Artifact[] = [
     href: "https://ui.bryanhoulton.com",
   },
   {
+    title: "Memory at the Speed of Thought",
+    href: "https://memory.orinlabs.org/",
+    content: (
+      <p>
+        Letting models do multi-hop reasoning over large memory banks in a
+        single turn.
+      </p>
+    ),
+    date: "2026",
+  },
+  {
     title: "Long-Horizon Agent API",
     href: "https://www.orinlabs.org/research/long-horizon-agents/",
     content: (
