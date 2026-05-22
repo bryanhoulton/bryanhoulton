@@ -15,7 +15,7 @@ type Work = {
 const work: Work[] = [
   {
     name: "Orin Labs",
-    dateRange: "2025-now",
+    dateRange: "2026-now",
     href: "https://orinlabs.org",
     image: orinImage,
     description: (
