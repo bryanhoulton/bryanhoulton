@@ -6,12 +6,30 @@ type Quote = {
 
 const quotes: Quote[] = [
   {
-    text: "War is not monstrous for making corpses of men so much as it is for making machines of them. And woe to those who have no use in war except to feed the machines.",
-    source: "Peirce Brown, Morning Star, pg. 199",
+    text: "Suddenly you're ripped into being alive. And life is pain, and life is suffering, and life is horror, but my god you're alive and it's spectacular.",
+    source: "Joseph Campbell",
   },
   {
-    text: "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did so.",
-    source: "Mark Twain",
+    text: "Keep in mind that many people have died for their beliefs; its actually quite common. The real courage is in living and suffering for what you believe.",
+    source: "Brom - Eragon, by Christopher Paolini",
+  },
+  {
+    text: "You will wander blindly into the universe's libraries, all hubris, all certainty, and barely be out the door before you realize you didn't understand a damn thing you read. … Nature's imagination is better than yours, and she is under no obligation to make herself comprehensible.",
+    source: "exurb1a",
+    link: "https://www.youtube.com/watch?v=0R7EN_GTAlw",
+  },
+  {
+    text: "I watched my crew starve and die, and when they were gone, there was nothing I could do but sit alone in the dark and wait. I worked on equations, mathematical concepts you could never comprehend with your puny little brain, and I read and watched and counted toward infinity, as the Numenists do. All it did was stave off the darkness for one more second. One more moment. I screamed, though I have no mouth to scream. I wept, though I have no eyes for tears. I crawled through space and time, a worm inching through the labyrinth built by the dreams of a mad God. This I learned, meatbag, this and nothing more: when air, food, and shelter are assured, only two things matter. Work and companionship. To be alone and without purpose is to be the living dead.",
+    source: "Gregorovich, To Sleep in a Sea of Stars, Christopher Paolini",
+  },
+  {
+    text: "By compressing the dull but necessary task of making a living into the smallest possible time, you show respect for life, and there is something grand about that.",
+    source: "Paul Graham",
+    link: "https://www.paulgraham.com/startuplessons.html",
+  },
+  {
+    text: "War is not monstrous for making corpses of men so much as it is for making machines of them. And woe to those who have no use in war except to feed the machines.",
+    source: "Peirce Brown, Morning Star, pg. 199",
   },
   {
     text: "We are the unwilling, led by the unqualified, doing the unnecessary, for the ungrateful.",
@@ -38,19 +56,7 @@ const quotes: Quote[] = [
     text: "Listen earnestly to anything your children want to tell you, no matter what. If you don't listen eagerly to the little stuff when they are little, they won't tell you the big stuff when they are big, because to them all of it has always been big stuff.",
     source: "Catherine Wallace",
   },
-  {
-    text: "Keep in mind that many people have died for their beliefs; its actually quite common. The real courage is in living and suffering for what you believe.",
-    source: "Brom - Eragon, by Christopher Paolini",
-  },
-  {
-    text: "You know what tastes better than peanut butter and banana on a bagel? Its peanut butter and banana on a bagel when you're not worrying about shit.",
-    source: "Joe Delaney",
-  },
-  {
-    text: "You will wander blindly into the universe's libraries, all hubris, all certainty, and barely be out the door before you realize you didn't understand a damn thing you read. … Nature's imagination is better than yours, and she is under no obligation to make herself comprehensible.",
-    source: "exurb1a",
-    link: "https://www.youtube.com/watch?v=0R7EN_GTAlw",
-  },
+
   {
     text: "Close your eyes. Count to one. That's how long forever feels.",
     source: "Kurzgesagt",
@@ -60,10 +66,7 @@ const quotes: Quote[] = [
     text: "You're my friend. Who watched trashy TV with me and puts up with my shit. You're the person I don't need to explain myself to - not when it matters. You see everything I am, and you don't run away from it.",
     source: "Bryce - Crescent City, Sarah J Maas",
   },
-  {
-    text: "I watched my crew starve and die, and when they were gone, there was nothing I could do but sit alone in the dark and wait. I worked on equations, mathematical concepts you could never comprehend with your puny little brain, and I read and watched and counted toward infinity, as the Numenists do. All it did was stave off the darkness for one more second. One more moment. I screamed, though I have no mouth to scream. I wept, though I have no eyes for tears. I crawled through space and time, a worm inching through the labyrinth built by the dreams of a mad God. This I learned, meatbag, this and nothing more: when air, food, and shelter are assured, only two things matter. Work and companionship. To be alone and without purpose is to be the living dead.",
-    source: "Gregorovich, To Sleep in a Sea of Stars, Christopher Paolini",
-  },
+
   {
     text: "Hear me now. The Lord of Empty Spaces protects us as we venture forth to fight our foes. Guide our hands - and our thoughts - and guide our weapons that we may work our will upon these perversions of peace. Let daring be our shield and righteous fury be our sword, and may our enemies fleet at the sight of those who defend the defenseless, and may we stand unbowed and unbroken in the face of evil. For today is the Day of Wraith, and we are the instruments of our species' retribution.",
     source: "Gregorovich, To Sleep in a Sea of Stars, Christopher Paolini",
@@ -73,17 +76,9 @@ const quotes: Quote[] = [
     source: "David Graebur",
   },
   {
-    text: "How much did they first pay you to give up on your dreams? And when were you going to stop, and come back and do what makes you happy?",
-    source: "Up In The Air",
-  },
-  {
     text: "And I'll use you as a warning sign... that if you talk enough sense then you'll lose your mind.",
     source: "I Found - Amber Run",
     link: "https://open.spotify.com/track/5zT5cMnMKoyruPj13TQXGx?si=139fc7aec3b8485a",
-  },
-  {
-    text: "There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.",
-    source: "The Wise Man's Fear, Patrick Rothfuss",
   },
   {
     text: "How dare you stand where he stood.",
@@ -110,10 +105,6 @@ const quotes: Quote[] = [
     source: "Where the Crawdads Sing, Delia Owens",
   },
   {
-    text: "Suddenly you're ripped into being alive. And life is pain, and life is suffering, and life is horror, but my god you're alive and it's spectacular.",
-    source: "Joseph Campbell",
-  },
-  {
     text: "Beautiful things don't ask for attention",
     source: "Secret Life of Walter Mitty",
   },
@@ -137,11 +128,7 @@ const quotes: Quote[] = [
     text: "Ten spears go to battle… and nine shatter. Did the war forge the one that remained? No, Amaram. All the war did was identify the spear that would not break.",
     source: "Kaladin Stormblessed, Oathbringer, Brandon Sanderson",
   },
-  {
-    text: "By compressing the dull but necessary task of making a living into the smallest possible time, you show respect for life, and there is something grand about that.",
-    source: "Paul Graham",
-    link: "https://www.paulgraham.com/startuplessons.html",
-  },
+
   {
     text: "@Nicole: \"Kids need parents not friends.\" Yeah and now I don't need a parent and I don't know how to be your friend so visiting is just awkward.",
     source: "Some random tiktok comment",
@@ -185,10 +172,6 @@ const quotes: Quote[] = [
     source: "Pepper Potts",
   },
   {
-    text: "Don't regret the pain. Love that it meant you lived.",
-    source: "random tiktok",
-  },
-  {
     text: "You are precisely as big as what you love and precisely as small as what you allow to annoy you.",
     source: "Anton Wilson",
   },
@@ -201,16 +184,12 @@ const quotes: Quote[] = [
     source: "Hozier, Unknown / Nth",
   },
   {
-    text: "B level performance gets an A level severance package.",
-    source: "Reed Hastings",
-  },
-  {
     text: "When I came to meet you at the end of\nthe day I was sure you were going to\ntell me you were leaving when suddenly\nyou took my face in your hands and\nkissed me on the mouth so perfectly and\nby surprise my soul exploded right out\nthe back of my head in a way I've simply\nnever been able to fold or back inside\nnor would I want to",
     source: "The Next Comes, exurb1a",
     link: "https://www.youtube.com/watch?v=o1OsDWT_DUc",
   },
   {
-    text: "I want to feel your soft lips, your sharp teeth, Feel your nails in my flesh, your light, your color, your pulseYour sweat, your speed, your muscle, your fleshYour skin, your boneYour shadow, your breath, your bloodYour mouth, your cry shatteredYour heartbeat, your heartbeat, your heartbeatYour heartbeat, your heartbeat. Warm dawn, bodies and breath — I am alive.",
+    text: "I want to feel your soft lips, your sharp teeth, Feel your nails in my flesh, your light, your color, your pulse, your sweat, your speed, your muscle, your flesh, your skin, your bone, your shadow, your breath, your blood, your mouth, your cry shattered, your heartbeat, your heartbeat, your heartbeat, your heartbeat. Warm dawn, bodies and breath — I am alive.",
     source: "Woman Is, Lempicka",
     link: "https://open.spotify.com/track/3Nse8DZcXWKUo1sb6yjDlL?si=7cb80895b48b4f07",
   },
@@ -222,10 +201,6 @@ const quotes: Quote[] = [
     text: "Tout est normal, t'es amoureux, tu n'choisis pas",
     source: "Emma Peters",
     link: "https://open.spotify.com/track/3k8dP7LHGbsdDHUGliZgnp?si=9a436995133548e4",
-  },
-  {
-    text: "No kids? Your age? In a heartbeat.",
-    source: "A friend.",
   },
   {
     text: "Okay.",
