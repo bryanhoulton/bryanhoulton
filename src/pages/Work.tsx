@@ -57,7 +57,7 @@ const work: Work[] = [
 export default function Work() {
   return (
     <div className="flex flex-col gap-4 p-6 max-w-2xl">
-      <h3 className="text-7xl font-bold">Work</h3>
+      <h3 className="text-6xl font-bold">Work</h3>
       <p className="text-lg text-gray-700 italic">
         "Twenty years from now you will be more disappointed by the things that
         you didn't do than by the ones you did so." - Mark Twain

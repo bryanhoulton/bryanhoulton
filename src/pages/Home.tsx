@@ -74,6 +74,8 @@ function Home() {
           technology as a tool for civilizational growth. Currently I'm thinking
           a lot about continual learning, energy, space, and compute.
         </p>
+
+        <hr className="my-4 border-gray-200" />
       </section>
 
       <section className="mb-12">

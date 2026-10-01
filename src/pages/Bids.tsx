@@ -41,12 +41,14 @@ export default function Bids() {
   return (
     <div className="flex flex-col gap-8 p-6 max-w-2xl">
       <div className="flex flex-col gap-4">
-        <h3 className="text-7xl font-bold">Bids</h3>
+        <h3 className="text-6xl font-bold">Bids</h3>
         <p className="text-lg text-gray-700">
           I learn best from people that care about their thing. Please yap to me
           about your takes. These can be redeemed in person or virtually.
         </p>
       </div>
+
+      <hr className="border-gray-200" />
 
       <div className="flex flex-col gap-2 -mx-2">
         {bids

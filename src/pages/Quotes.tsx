@@ -131,7 +131,7 @@ const quotes: Quote[] = [
   },
   {
     text: "He thinks he has to lead alone… because his father had to. He doesn't realize the strength you have together.",
-    source: "Hiccups Mom, HTTYD",
+    source: "Valka, How to Train Your Dragon 2",
   },
   {
     text: "Ten spears go to battle… and nine shatter. Did the war forge the one that remained? No, Amaram. All the war did was identify the spear that would not break.",
@@ -240,10 +240,10 @@ const quotes: Quote[] = [
 export default function Quotes() {
   return (
     <div className="flex flex-col gap-4 p-6 max-w-4xl">
-      <h3 className="text-7xl font-bold">Quotes</h3>
-      <p className="text-lg text-gray-700 mb-2">
-        Bangers that I ended up saving.
-      </p>
+      <h3 className="text-6xl font-bold">Quotes</h3>
+      <p className="text-lg text-gray-700">Bangers that I ended up saving.</p>
+
+      <hr className="my-4 border-gray-200" />
 
       <div className="space-y-1 -mx-4">
         {quotes.map((quote, index) => (

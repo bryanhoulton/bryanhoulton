@@ -80,7 +80,14 @@ const artifacts: Artifact[] = [
 export default function Artifacts() {
   return (
     <div className="flex flex-col gap-8 p-6 max-w-2xl">
-      <h3 className="text-7xl font-bold">Artifacts</h3>
+      <div className="flex flex-col gap-4">
+        <h3 className="text-6xl font-bold">Artifacts</h3>
+        <p className="text-lg text-gray-700">
+          Things I've built, mostly for fun.
+        </p>
+      </div>
+
+      <hr className="border-gray-200" />
 
       <ul className="list-disc -mx-4">
         {artifacts.map((artifact) => (

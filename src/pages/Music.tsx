@@ -309,9 +309,12 @@ const albums: Album[] = [
 export default function Music() {
   return (
     <div className="flex flex-col gap-4 p-6 max-w-7xl mx-auto">
-      <h3 className="text-7xl font-bold">Album Wall</h3>
+      <h3 className="text-6xl font-bold">Album Wall</h3>
+      <p className="text-lg text-gray-700">Albums I've had on repeat.</p>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 mt-4 gap-4">
+      <hr className="my-4 border-gray-200" />
+
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
         {albums
           .sort((a, b) => (a.priority ?? 10) - (b.priority ?? 10))
           .map((album) => (
