@@ -1,13 +1,15 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink } from "lucide-react";
 
-import manateeImage from '../assets/manatee.png';
-import orinImage from '../assets/orinlabs.png';
-import startupShellImage from '../assets/shell.png';
+import manateeImage from "../assets/manatee.png";
+import navatticImage from "../assets/navattic.png";
+import orinImage from "../assets/orinlabs.png";
+import startupShellImage from "../assets/shell.png";
 
 type Work = {
   name: string;
   href?: string;
   image: string;
+  imageClassName?: string;
   dateRange: string;
   description: React.ReactNode;
 };
@@ -16,22 +18,19 @@ const work: Work[] = [
   {
     name: "Orin Labs",
     dateRange: "2026-now",
-    href: "https://orinlabs.org",
+    href: "https://orinlabs.ai",
     image: orinImage,
     description: (
-      <p className="text-gray-700">
-        Building agents that learn. We're{" "}
-        <a
-          href="https://orinlabs.org/hiring"
-          className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          hiring
-        </a>
-        .
-      </p>
+      <p className="text-gray-700">Exploring everything infrastructure.</p>
     ),
+  },
+  {
+    name: "Navattic",
+    dateRange: "2024-2025",
+    href: "https://www.navattic.com",
+    image: navatticImage,
+    imageClassName: "bg-stone-100 p-6",
+    description: <p className="text-gray-700">Engineering new products.</p>,
   },
   {
     name: "Manatee",
@@ -73,7 +72,9 @@ export default function Work() {
               <img
                 src={work.image}
                 alt={work.name}
-                className="aspect-square rounded-lg w-24 h-24 shrink-0"
+                className={`aspect-square rounded-lg w-24 h-24 shrink-0 ${
+                  work.imageClassName ?? ""
+                }`}
               />
 
               <div className="flex flex-col gap-2">

@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink } from "lucide-react";
 
 type Person = {
   name: string;
@@ -68,18 +68,10 @@ const discoveryQueue: Source[] = [
 const toMeet: Person[] = [
   { name: "David Rosenthal" },
   { name: "Ben Gilbert" },
-  { name: "Kudzo Ahegbebu" },
   { name: "Sholto Douglas" },
-  { name: "Claire Birch" },
   { name: "Tyler Cowen" },
-  { name: "Gytis Daujotas" },
   { name: "Dwarkesh Patel" },
-  { name: "Gavin Leech" },
   { name: "John Collison" },
-  { name: "John Phamous" },
-  { name: "Jeffery Wang (Exa)" },
-  { name: "Ivan Yevenko" },
-  { name: "Alexey Guzey" },
 ];
 
 export default function People() {
