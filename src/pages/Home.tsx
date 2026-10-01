@@ -1,12 +1,13 @@
-import alamoImage from '../assets/alamo.jpeg';
-import boardImage from '../assets/board.jpeg';
-import bugsImage from '../assets/bugs.jpg';
-import bugsImage2 from '../assets/bugs2.jpeg';
-import parkImage from '../assets/park.jpg';
-import prImage from '../assets/pr.jpeg';
-import sparkImage from '../assets/spark.jpeg';
-import squatImage from '../assets/squat.jpeg';
-import tillieImage from '../assets/tillie.jpeg';
+import boardImage from "../assets/board.jpeg";
+import bugsImage2 from "../assets/bugs2.jpeg";
+import lakesideGroupImage from "../assets/lakeside-group.jpg";
+import matchingSweatersImage from "../assets/matching-sweaters.jpg";
+import mountainLakeImage from "../assets/mountain-lake.jpg";
+import parkImage from "../assets/park.jpg";
+import prImage from "../assets/pr.jpeg";
+import sparkImage from "../assets/spark.jpeg";
+import squatImage from "../assets/squat.jpeg";
+import tillieImage from "../assets/tillie.jpeg";
 
 type GalleryImage = {
   src: string;
@@ -16,28 +17,10 @@ type GalleryImage = {
 
 function Home() {
   const galleryImages: GalleryImage[] = [
-    { src: bugsImage2, alt: "Bugs2", span: "col-span-2 row-span-2" },
-    { src: bugsImage, alt: "Bugs", span: "col-span-2 row-span-2" },
     {
       src: parkImage,
       alt: "Park",
       span: "col-span-2 row-span-2 aspect-square",
-    },
-    { src: prImage, alt: "PR", span: "col-span-2 row-span-2 aspect-square" },
-    {
-      src: sparkImage,
-      alt: "Spark",
-      span: "col-span-3 row-span-2 aspect-video",
-    },
-    {
-      src: boardImage,
-      alt: "Board",
-      span: "col-span-1 row-span-2",
-    },
-    {
-      src: alamoImage,
-      alt: "Alamo",
-      span: "col-span-1 row-span-2",
     },
     {
       src: tillieImage,
@@ -45,69 +28,69 @@ function Home() {
       span: "col-span-2 row-span-2 aspect-square",
     },
     {
+      src: boardImage,
+      alt: "Board",
+      span: "col-span-3 row-span-2 aspect-video",
+    },
+    {
       src: squatImage,
       alt: "Squat",
       span: "col-span-1 row-span-2",
     },
+    {
+      src: lakesideGroupImage,
+      alt: "Friends together beside a lake",
+      span: "col-span-2 row-span-2 aspect-square",
+    },
+    {
+      src: mountainLakeImage,
+      alt: "Friends gathered at a mountain lake",
+      span: "col-span-2 row-span-2 aspect-square",
+    },
+    {
+      src: matchingSweatersImage,
+      alt: "Three friends wearing matching cable-knit sweaters",
+      span: "col-span-1 row-span-2",
+    },
+    {
+      src: sparkImage,
+      alt: "Spark",
+      span: "col-span-3 row-span-2 aspect-video",
+    },
+    {
+      src: bugsImage2,
+      alt: "Bugs2",
+      span: "col-span-2 row-span-2 aspect-square",
+    },
+    { src: prImage, alt: "PR", span: "col-span-2 row-span-2 aspect-square" },
   ];
 
   return (
     <div className="text-gray-900 px-6">
-      <section className="flex flex-col py-6 max-w-2xl mb-6">
+      <section className="flex flex-col py-6 max-w-2xl">
         <h1 className="text-7xl font-bold mb-4">Hello!</h1>
         <p className="text-lg mb-3 text-gray-700">
           I'm Bryan. I believe in scale, free markets, empiricism, and
-          technology levers. Currently I'm thinking a lot about memory and
-          continual learning.
+          technology as a tool for civilizational growth. Currently I'm thinking
+          a lot about continual learning, energy, space, and compute.
         </p>
-        <p className="text-lg mb-3 text-gray-700">Some good reads:</p>
-        <ul className="list-disc list-inside text-gray-700 space-y-1">
-          <li>
-            <a
-              href="https://arxiv.org/abs/2501.00663"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-gray-900"
-            >
-              Titans: Learning to Memorize at Test Time
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://abehrouz.github.io/files/NL.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-gray-900"
-            >
-              Nested Learning: The Illusion of Deep Learning Architecture
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://arxiv.org/abs/2601.07372"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-gray-900"
-            >
-              Conditional Memory via Scalable Lookup
-            </a>
-          </li>
-        </ul>
       </section>
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-2 text-gray-900">
-          Some other things I believe
+          Some things I believe
         </h2>
 
         <ul className="list-disc list-inside">
-          <li>Decision quality is the best leadership metric</li>
-          <li>Easy companies are just as hard as hard ones</li>
-          <li>Small teams get more done</li>
-          <li>Moving quickly is important</li>
+          <li>
+            <a href="nat.org" className="underline hover:text-gray-900">
+              "As human beings it is our right (maybe our moral duty) to reshape
+              the universe to our preferences"
+            </a>
+          </li>
+          <li>Work on things that are important yet not being worked on</li>
           <li>Impact over happiness, happiness comes from impact</li>
-          <li>Markets inefficiently trend toward efficiency</li>
-          <li>You really can just do things</li>
+          <li>Hard companies are just as hard as easy ones</li>
         </ul>
       </section>
 
@@ -129,21 +112,6 @@ function Home() {
             </div>
           ))}
         </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-2 text-gray-900">Affiliations</h2>
-        <p className="text-gray-700 mb-2">
-          I'm lucky to be affiliated with some great people and organizations.
-        </p>
-
-        <ul className="list-disc list-inside">
-          <li>Startup Shell</li>
-          <li>Workshop</li>
-          <li>South Park Commons</li>
-          <li>YC</li>
-          <li>University of Maryland</li>
-        </ul>
       </section>
     </div>
   );
