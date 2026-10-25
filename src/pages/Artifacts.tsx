@@ -7,6 +7,17 @@ type Artifact = {
 
 const artifacts: Artifact[] = [
   {
+    title: "Horizon",
+    href: "/research/horizon",
+    content: (
+      <p>
+        A benchmark that measures an agent's ability to learn from past
+        experience.
+      </p>
+    ),
+    date: "2026",
+  },
+  {
     date: "2024-?",
     title: "Slate",
     content: (
@@ -53,23 +64,6 @@ const artifacts: Artifact[] = [
     href: "https://ui.orinlabs.org/",
   },
   {
-    title: "Tablet",
-    href: "https://tablet-ecru.vercel.app/",
-    content: (
-      <p>
-        A collaborative document editor for argumentation. Coherence not
-        guaranteed.
-      </p>
-    ),
-    date: "2024",
-  },
-  {
-    title: "Poddlo",
-    href: "https://www.poddlo.com/",
-    content: <p>A stale search engine for podcasts.</p>,
-    date: "2024",
-  },
-  {
     href: "https://senior-pjia6v0ek-bryan-houlton.vercel.app/",
     title: "Senior Dev",
     content: <p>Will comment rudely on all of your PRs.</p>,
@@ -91,7 +85,10 @@ export default function Artifacts() {
 
       <ul className="list-disc -mx-4">
         {artifacts.map((artifact) => (
-          <a href={artifact.href} target="_blank" rel="noopener noreferrer">
+          <a
+            href={artifact.href}
+            {...(artifact.href?.startsWith("/") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
+          >
             <li
               key={artifact.title}
               className="flex flex-col gap-2 hover:bg-gray-100 rounded-md transition-all duration-300 p-4"

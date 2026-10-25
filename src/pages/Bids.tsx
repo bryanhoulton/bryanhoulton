@@ -12,12 +12,6 @@ const bids: Bid[] = [
     amount: 51.47,
   },
   {
-    name: "Research vs Application Layer",
-    description:
-      "Talk to me about why you're working on one and not the other.",
-    amount: 5.8,
-  },
-  {
     name: "Neuromorphic Computing",
     description:
       "If you're making brains, reservoir computers, or connectomes, I want hear all about it. Bonus read: 'A Brief History of Intelligence' by Max Bennett.",
@@ -28,6 +22,12 @@ const bids: Bid[] = [
     description:
       "Besides satellites, what's the point of being in space? We need a reason for FAANG to dump billions into space infra. Is it data centers?",
     amount: 10.02,
+  },
+  {
+    name: "Brain Computer Interfaces",
+    description:
+      "How are scaling laws applying to brain activity data? If you're working on BCIs, I want to hear about what's scaling and what isn't.",
+    amount: 32.47,
   },
   {
     name: "Duplex Voice Models",

@@ -218,3 +218,76 @@ h6 {
   --color-info-800: var(--info-800);
   --color-info-900: var(--info-900);
 }
+
+/* Research article prose styles */
+.research-article {
+  @apply w-full;
+}
+
+.research-prose {
+  @apply space-y-5 text-neutral-950;
+  font-size: 1.125rem;
+  line-height: 1.68;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.research-prose p {
+  @apply mb-6;
+}
+
+.research-prose ul,
+.research-prose ol {
+  @apply mb-6 space-y-3 pl-6;
+}
+
+.research-prose ul {
+  @apply list-disc;
+}
+
+.research-prose ol {
+  @apply list-decimal;
+}
+
+.research-prose li {
+  color: inherit;
+}
+
+.research-prose strong {
+  @apply font-semibold text-neutral-950;
+}
+
+.research-prose em {
+  font-style: italic;
+}
+
+.research-prose code {
+  @apply rounded bg-neutral-950 px-1.5 py-0.5 text-sm text-white;
+  font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+}
+
+.research-prose figure code {
+  font-size: 0.9em;
+}
+
+.research-prose a {
+  @apply text-neutral-950 underline underline-offset-4 decoration-neutral-300 transition-colors hover:decoration-neutral-950;
+}
+
+.research-content hr {
+  @apply my-14 border-neutral-950;
+}
+
+/* Recharts focus reset */
+.recharts-wrapper:focus,
+.recharts-wrapper:focus-visible,
+.recharts-surface:focus,
+.recharts-surface:focus-visible,
+.recharts-wrapper *:focus,
+.recharts-wrapper *:focus-visible {
+  outline: none !important;
+}
+
+.recharts-scatter-symbol .recharts-symbols {
+  transition: fill-opacity 0.2s ease;
+}
