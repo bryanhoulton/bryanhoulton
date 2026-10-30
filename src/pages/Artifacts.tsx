@@ -1,5 +1,4 @@
 type Artifact = {
-  date: string;
   title: string;
   content: React.ReactNode;
   href?: string;
@@ -15,10 +14,8 @@ const artifacts: Artifact[] = [
         experience.
       </p>
     ),
-    date: "2026",
   },
   {
-    date: "2024-?",
     title: "Slate",
     content: (
       <p>
@@ -38,14 +35,13 @@ const artifacts: Artifact[] = [
   },
   {
     title: "Memory at the Speed of Thought",
-    href: "https://memory.orinlabs.org/",
+    href: "https://memory.bryanhoulton.com/",
     content: (
       <p>
         Letting models do multi-hop reasoning over large memory banks in a
         single turn.
       </p>
     ),
-    date: "2026",
   },
   {
     title: "Long-Horizon Agent API",
@@ -53,21 +49,16 @@ const artifacts: Artifact[] = [
     content: (
       <p>An easy way to host long-horizon agents. Email me for an API key.</p>
     ),
-    date: "fall 2025",
   },
   {
-    date: "mid-2025",
-    title: "Stateful UI DSL for LLMs",
+    title: "Building proactive AI agents",
+    href: "https://bryanhoulton1.substack.com/p/building-proactive-ai-agents",
     content: (
-      <p>A DSL for stateful, design-constrained UIs with nice validation</p>
+      <p>
+        How we've built agents with dynamic-resolution memory, stateful tools,
+        and more.
+      </p>
     ),
-    href: "https://ui.orinlabs.org/",
-  },
-  {
-    href: "https://senior-pjia6v0ek-bryan-houlton.vercel.app/",
-    title: "Senior Dev",
-    content: <p>Will comment rudely on all of your PRs.</p>,
-    date: "2024",
   },
 ];
 
@@ -93,7 +84,6 @@ export default function Artifacts() {
               key={artifact.title}
               className="flex flex-col gap-2 hover:bg-gray-100 rounded-md transition-all duration-300 p-4"
             >
-              <span className="text-sm text-gray-500">{artifact.date}</span>
               <h4 className="text-2xl font-bold">{artifact.title}</h4>
               {artifact.content}
             </li>
