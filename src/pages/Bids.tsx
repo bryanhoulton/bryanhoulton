@@ -35,6 +35,12 @@ const bids: Bid[] = [
       "We need voice models that model reasoning and speech as separate, related channels. If you build this, we will be your first customer.",
     amount: 25.79,
   },
+  {
+    name: "Economics of Robot Deployment",
+    description:
+      "Which markets are most ripe for robot disruption? Which are cost centers and which are profit wells? How will the physical takeoff start?",
+    amount: 17.92,
+  },
 ];
 
 export default function Bids() {
