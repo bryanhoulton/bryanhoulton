@@ -1,3 +1,5 @@
+import { ExternalLink } from "lucide-react";
+
 type Artifact = {
   title: string;
   content: React.ReactNode;
@@ -6,7 +8,7 @@ type Artifact = {
 
 const artifacts: Artifact[] = [
   {
-    title: "Horizon",
+    title: "Horizon: A Learning Benchmark",
     href: "/research/horizon",
     content: (
       <p>
@@ -16,25 +18,17 @@ const artifacts: Artifact[] = [
     ),
   },
   {
-    title: "Slate",
+    title: "Slate Design System",
     content: (
       <p>
-        I'm a configurable component library nerd and maintain{" "}
-        <a
-          href="https://ui.bryanhoulton.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary-600 p-1 underline rounded-md hover:bg-primary-50 transition-colors inline-block px-1 -mx-0.5"
-        >
-          my own library
-        </a>{" "}
+        I'm a configurable component library nerd and maintain my own library
         for personal and professional use.
       </p>
     ),
     href: "https://ui.bryanhoulton.com",
   },
   {
-    title: "Memory at the Speed of Thought",
+    title: "Streamable LLM Memory",
     href: "https://memory.bryanhoulton.com/",
     content: (
       <p>
@@ -44,14 +38,7 @@ const artifacts: Artifact[] = [
     ),
   },
   {
-    title: "Long-Horizon Agent API",
-    href: "https://www.orinlabs.org/research/long-horizon-agents/",
-    content: (
-      <p>An easy way to host long-horizon agents. Email me for an API key.</p>
-    ),
-  },
-  {
-    title: "Building proactive AI agents",
+    title: "Guide to Building Proactive Agents",
     href: "https://bryanhoulton1.substack.com/p/building-proactive-ai-agents",
     content: (
       <p>
@@ -77,14 +64,23 @@ export default function Artifacts() {
       <ul className="list-disc -mx-4">
         {artifacts.map((artifact) => (
           <a
+            key={artifact.title}
+            className="group"
             href={artifact.href}
             {...(artifact.href?.startsWith("/") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
           >
             <li
-              key={artifact.title}
-              className="flex flex-col gap-2 hover:bg-gray-100 rounded-md transition-all duration-300 p-4"
+              className="flex flex-col gap-1 hover:bg-gray-100 rounded-md transition-all duration-300 p-4"
             >
-              <h4 className="text-2xl font-bold">{artifact.title}</h4>
+              <div className="flex items-center gap-2">
+                <h4 className="text-2xl font-bold">{artifact.title}</h4>
+                {artifact.href && (
+                  <ExternalLink
+                    className="w-4 h-4 shrink-0 text-gray-400 transition-transform duration-200 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 motion-reduce:transition-none motion-reduce:transform-none"
+                    aria-hidden="true"
+                  />
+                )}
+              </div>
               {artifact.content}
             </li>
           </a>
