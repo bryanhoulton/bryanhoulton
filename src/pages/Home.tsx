@@ -85,7 +85,12 @@ function Home() {
 
         <ul className="list-disc list-inside">
           <li>
-            <a href="nat.org" className="underline hover:text-gray-900">
+            <a
+              href="https://nat.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-900"
+            >
               "As human beings it is our right (maybe our moral duty) to reshape
               the universe to our preferences"
             </a>
