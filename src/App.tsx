@@ -14,7 +14,6 @@ import Artifacts from './pages/Artifacts';
 import Bids from './pages/Bids';
 import Home from './pages/Home';
 import Music from './pages/Music';
-import People from './pages/People';
 import Quotes from './pages/Quotes';
 import Work from './pages/Work';
 
@@ -45,12 +44,6 @@ const navButtons: NavButton[] = [
     id: "bids",
     description: "i'll pay you to yap",
     component: Bids,
-  },
-  {
-    label: "People",
-    id: "people",
-    description: "algorithmic networking",
-    component: People,
   },
   {
     label: "Quotes",
