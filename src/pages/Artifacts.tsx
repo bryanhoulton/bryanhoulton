@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 type Artifact = {
   title: string;
@@ -18,14 +19,14 @@ const artifacts: Artifact[] = [
     ),
   },
   {
-    title: "Slate Design System",
+    title: "Guide to Building Proactive Agents",
+    href: "https://bryanhoulton1.substack.com/p/building-proactive-ai-agents",
     content: (
       <p>
-        I'm a configurable component library nerd and maintain my own library
-        for personal and professional use.
+        How we've built agents with dynamic-resolution memory, stateful tools,
+        and more.
       </p>
     ),
-    href: "https://ui.bryanhoulton.com",
   },
   {
     title: "Streamable LLM Memory",
@@ -38,14 +39,14 @@ const artifacts: Artifact[] = [
     ),
   },
   {
-    title: "Guide to Building Proactive Agents",
-    href: "https://bryanhoulton1.substack.com/p/building-proactive-ai-agents",
+    title: "Slate Design System",
     content: (
       <p>
-        How we've built agents with dynamic-resolution memory, stateful tools,
-        and more.
+        I'm a configurable component library nerd and maintain my own library
+        for personal and professional use.
       </p>
     ),
+    href: "https://ui.bryanhoulton.com",
   },
 ];
 
@@ -63,10 +64,10 @@ export default function Artifacts() {
 
       <ul className="list-disc -mx-4">
         {artifacts.map((artifact) => (
-          <a
+          <Link
             key={artifact.title}
             className="group"
-            href={artifact.href}
+            to={artifact.href ?? "#"}
             {...(artifact.href?.startsWith("/") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
           >
             <li
@@ -83,7 +84,7 @@ export default function Artifacts() {
               </div>
               {artifact.content}
             </li>
-          </a>
+          </Link>
         ))}
       </ul>
     </div>

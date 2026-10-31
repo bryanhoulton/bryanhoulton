@@ -1,5 +1,5 @@
 import {
-  useEffect,
+  useLayoutEffect,
   useRef,
   useState,
 } from 'react';
@@ -9,6 +9,7 @@ import {
   MenuIcon,
   XIcon,
 } from 'lucide-react';
+import { useLocation, useNavigationType } from 'react-router-dom';
 
 import Artifacts from './pages/Artifacts';
 import Bids from './pages/Bids';
@@ -63,6 +64,8 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeId, setActiveId] = useState(navButtons[0].id);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
+  const navigationType = useNavigationType();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -74,12 +77,21 @@ function App() {
 
   const scrollToSection = (id: string, behavior: ScrollBehavior = "smooth") => {
     document.getElementById(id)?.scrollIntoView({ behavior, block: "start" });
-    window.history.replaceState(null, "", id === "home" ? "/" : `#${id}`);
+    window.history.replaceState(window.history.state, "", id === "home" ? "/" : `#${id}`);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
+    const storageKey = `personal-site:scroll:${location.key}`;
+    let savedPosition: string | null = null;
+    if (navigationType === "POP") {
+      try {
+        savedPosition = sessionStorage.getItem(storageKey);
+      } catch {
+        // Navigation still works when browser storage is unavailable.
+      }
+    }
 
     const updateActive = () => {
       const containerTop = container.getBoundingClientRect().top;
@@ -104,18 +116,36 @@ function App() {
     const initialId =
       window.location.hash.slice(1) ||
       window.location.pathname.replace(/^\/+|\/+$/g, "");
-    if (navButtons.some((button) => button.id === initialId)) {
+    if (savedPosition !== null && Number.isFinite(Number(savedPosition))) {
+      container.scrollTop = Math.max(0, Number(savedPosition));
+    } else if (navButtons.some((button) => button.id === initialId)) {
       document.getElementById(initialId)?.scrollIntoView({ block: "start" });
     }
     updateActive();
 
-    container.addEventListener("scroll", updateActive, { passive: true });
+    let lastScrollTop = container.scrollTop;
+    const onScroll = () => {
+      lastScrollTop = container.scrollTop;
+      updateActive();
+    };
+    const saveScroll = () => {
+      try {
+        sessionStorage.setItem(storageKey, String(lastScrollTop));
+      } catch {
+        // Storage may be disabled in private or restricted browser sessions.
+      }
+    };
+
+    container.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("pagehide", saveScroll);
     window.addEventListener("resize", updateActive);
     return () => {
-      container.removeEventListener("scroll", updateActive);
+      saveScroll();
+      container.removeEventListener("scroll", onScroll);
+      window.removeEventListener("pagehide", saveScroll);
       window.removeEventListener("resize", updateActive);
     };
-  }, []);
+  }, [location.key, navigationType]);
 
   const navLinkClass = (id: string) =>
     `rounded-lg hover:bg-gray-100 p-2 group flex items-center justify-between ${

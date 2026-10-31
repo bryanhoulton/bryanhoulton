@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 
 import { cn } from 'slate-ui';
 import { ArrowLeftIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface ResearchArticleProps {
   title: string;
@@ -33,13 +34,13 @@ export function ResearchArticle({
   return (
     <article className="research-article flex w-full flex-col px-8 pb-24 pt-14 sm:px-10 sm:pb-32 sm:pt-20 lg:px-12">
       <header className="max-w-6xl">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="flex items-center gap-2 text-sm font-medium text-neutral-500 transition-colors hover:text-neutral-900 group"
         >
           <ArrowLeftIcon className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
           Home
-        </a>
+        </Link>
         <h1 className="mt-5 text-neutral-950" style={{ fontSize: 'clamp(2.75rem, 13.5vw, 7.5rem)', fontWeight: 600, lineHeight: 0.9, letterSpacing: '-0.055em' }}>
           {title}
         </h1>

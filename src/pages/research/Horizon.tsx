@@ -17,7 +17,11 @@ const HERO_ABSTRACT = "We're releasing Horizon, a benchmark that measures an age
 
 export default function Horizon() {
   useEffect(() => {
+    const previousTitle = document.title;
     document.title = 'Introducing Horizon';
+    return () => {
+      document.title = previousTitle;
+    };
   }, []);
 
   return (
