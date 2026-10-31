@@ -34,9 +34,9 @@ const navButtons: NavButton[] = [
   },
 
   {
-    label: "Artifacts",
+    label: "Showcase",
     id: "artifacts",
-    description: "proof i existed",
+    description: "favorite projects",
     component: Artifacts,
   },
   {

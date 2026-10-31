@@ -17,10 +17,11 @@ type Work = {
 const work: Work[] = [
   {
     name: "Orin Labs",
+    href: "https://orinlabs.ai",
     dateRange: "2026",
     image: orinImage,
     description: (
-      <p className="text-gray-700">Agent infrastructure and research.</p>
+      <p className="text-gray-700">AI agents for energy companies</p>
     ),
   },
   {

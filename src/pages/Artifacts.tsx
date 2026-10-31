@@ -53,7 +53,7 @@ export default function Artifacts() {
   return (
     <div className="flex flex-col gap-8 p-6 max-w-2xl">
       <div className="flex flex-col gap-4">
-        <h3 className="text-6xl font-bold">Artifacts</h3>
+        <h3 className="text-6xl font-bold">Showcase</h3>
         <p className="text-lg text-gray-700">
           Things I've built, mostly for fun.
         </p>
