@@ -28,24 +28,8 @@ const quotes: Quote[] = [
     link: "https://www.paulgraham.com/startuplessons.html",
   },
   {
-    text: "War is not monstrous for making corpses of men so much as it is for making machines of them. And woe to those who have no use in war except to feed the machines.",
-    source: "Peirce Brown, Morning Star, pg. 199",
-  },
-  {
-    text: "We are the unwilling, led by the unqualified, doing the unnecessary, for the ungrateful.",
-    source: "The Reason You're Alive, Matthew Quick (requoted)",
-  },
-  {
     text: "We dont get to choose our time. Death is what gives life meaning. To know your days are numbered. Your time is short.",
     source: "The Ancient One, Doctor Strange",
-  },
-  {
-    text: "No one knows what curves life will throw at you, but if the driver has the courage to create his own conditions, then the rain is simply rain.",
-    source: "The Art of Racing in the Rain, 2019",
-  },
-  {
-    text: "Everything around you that you call life was made up by people no smarter than you.",
-    source: "Steve Jobs",
   },
   {
     text: "We were being told that we somehow must become what we are not, sacrificing what we are, to inherent the masquerade of what we will be.",
@@ -56,17 +40,11 @@ const quotes: Quote[] = [
     text: "Listen earnestly to anything your children want to tell you, no matter what. If you don't listen eagerly to the little stuff when they are little, they won't tell you the big stuff when they are big, because to them all of it has always been big stuff.",
     source: "Catherine Wallace",
   },
-
   {
     text: "Close your eyes. Count to one. That's how long forever feels.",
     source: "Kurzgesagt",
     link: "https://www.youtube.com/watch?v=MBRqu0YOH14",
   },
-  {
-    text: "You're my friend. Who watched trashy TV with me and puts up with my shit. You're the person I don't need to explain myself to - not when it matters. You see everything I am, and you don't run away from it.",
-    source: "Bryce - Crescent City, Sarah J Maas",
-  },
-
   {
     text: "Hear me now. The Lord of Empty Spaces protects us as we venture forth to fight our foes. Guide our hands - and our thoughts - and guide our weapons that we may work our will upon these perversions of peace. Let daring be our shield and righteous fury be our sword, and may our enemies fleet at the sight of those who defend the defenseless, and may we stand unbowed and unbroken in the face of evil. For today is the Day of Wraith, and we are the instruments of our species' retribution.",
     source: "Gregorovich, To Sleep in a Sea of Stars, Christopher Paolini",
@@ -74,15 +52,6 @@ const quotes: Quote[] = [
   {
     text: "The ultimate hidden truth of the world is that it is something that we make, and could just as easily make differently.",
     source: "David Graebur",
-  },
-  {
-    text: "And I'll use you as a warning sign... that if you talk enough sense then you'll lose your mind.",
-    source: "I Found - Amber Run",
-    link: "https://open.spotify.com/track/5zT5cMnMKoyruPj13TQXGx?si=139fc7aec3b8485a",
-  },
-  {
-    text: "How dare you stand where he stood.",
-    source: "Harry Potter, Harry Potter",
   },
   {
     text: "There is something terrifyingly beautiful about watching someone who has come to terms with death and stares it in the eyes with no fear.",
@@ -101,10 +70,6 @@ const quotes: Quote[] = [
     source: "My grandfather",
   },
   {
-    text: "I am the marsh now. I am the feather of an egret. I am every shell washed upon the shore. I am a firefly. You'll see hundreds beckoning far into the dark reaches of the marsh. And that's where you will always find me. Way out yonder. Where the crawdads sing.",
-    source: "Where the Crawdads Sing, Delia Owens",
-  },
-  {
     text: "Beautiful things don't ask for attention",
     source: "Secret Life of Walter Mitty",
   },
@@ -117,21 +82,8 @@ const quotes: Quote[] = [
     source: "Oscar Wilde",
   },
   {
-    text: "I have walked your halls, broken your schools, eaten at your tables, and suffered your gallows.",
-    source: "Darrow, Red Rising",
-  },
-  {
     text: "He thinks he has to lead alone… because his father had to. He doesn't realize the strength you have together.",
     source: "Valka, How to Train Your Dragon 2",
-  },
-  {
-    text: "Ten spears go to battle… and nine shatter. Did the war forge the one that remained? No, Amaram. All the war did was identify the spear that would not break.",
-    source: "Kaladin Stormblessed, Oathbringer, Brandon Sanderson",
-  },
-
-  {
-    text: "@Nicole: \"Kids need parents not friends.\" Yeah and now I don't need a parent and I don't know how to be your friend so visiting is just awkward.",
-    source: "Some random tiktok comment",
   },
   {
     text: "With shortness of breath… I'll try to explain the infinite… And how rare and beautiful it truly is that we exist",
@@ -147,17 +99,9 @@ const quotes: Quote[] = [
     source: "Rumi",
   },
   {
-    text: "Living is an ocean",
-    source: "@dadchats",
-  },
-  {
     text: "I will only ever love you with my arms behind my back. Because I'm gonna love you heart forward. It's all I know.",
     source: "Nahko and the Medicine for the People",
     link: "https://open.spotify.com/track/07K1i2by973KAbbQtB846W?si=220c930e42f74299",
-  },
-  {
-    text: "I thought I knew all the people in the world who were asking these questions. Who on Earth are you?",
-    source: "Sholto Douglas",
   },
   {
     text: "Perhaps the only difference between me and other people, was that I've always demanded more from the sunset. More spectacular colours when the sun hit the horizon. That's perhaps my only sin.",
@@ -166,22 +110,6 @@ const quotes: Quote[] = [
   {
     text: "The crux of man is to truly make meaning, and not delusion, out of nothing.",
     source: "Anton Wilson",
-  },
-  {
-    text: "It's always been you.",
-    source: "Pepper Potts",
-  },
-  {
-    text: "You are precisely as big as what you love and precisely as small as what you allow to annoy you.",
-    source: "Anton Wilson",
-  },
-  {
-    text: "Tell me about your tomorrow.",
-    source: "A close friend",
-  },
-  {
-    text: "It ain't the being alone\nIt ain't the empty home, baby\nYou know I'm good on my own\nYou know, it's more the being unknown",
-    source: "Hozier, Unknown / Nth",
   },
   {
     text: "When I came to meet you at the end of\nthe day I was sure you were going to\ntell me you were leaving when suddenly\nyou took my face in your hands and\nkissed me on the mouth so perfectly and\nby surprise my soul exploded right out\nthe back of my head in a way I've simply\nnever been able to fold or back inside\nnor would I want to",
@@ -196,11 +124,6 @@ const quotes: Quote[] = [
   {
     text: "Thou art God.",
     source: "Stranger in a Strange Land",
-  },
-  {
-    text: "Tout est normal, t'es amoureux, tu n'choisis pas",
-    source: "Emma Peters",
-    link: "https://open.spotify.com/track/3k8dP7LHGbsdDHUGliZgnp?si=9a436995133548e4",
   },
   {
     text: "Okay.",
