@@ -74,6 +74,9 @@ function Home() {
           technology as a tool for civilizational growth. Currently I'm thinking
           a lot about continual learning, energy, space, and compute.
         </p>
+        <p className="text-lg mb-3 text-gray-700">
+          I also run <a href="https://startupshell.org" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-900">Shell House</a>.
+        </p>
 
         <hr className="my-4 border-gray-200" />
       </section>
