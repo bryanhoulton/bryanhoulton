@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 import manateeImage from "../assets/manatee.png";
 import navatticImage from "../assets/navattic.png";
 import orinImage from "../assets/orinlabs.png";
-import startupShellImage from "../assets/shell.png";
+import spcImage from "../assets/spc.png";
 
 type Work = {
   name: string;
@@ -18,37 +18,35 @@ const work: Work[] = [
   {
     name: "Orin Labs",
     href: "https://orinlabs.ai",
-    dateRange: "2026",
+    dateRange: "2025-2026",
     image: orinImage,
     description: (
-      <p className="text-gray-700">AI agents for energy companies</p>
+      <p className="text-gray-700">Co-Founder. AI agents for energy companies.</p>
     ),
+  },
+  {
+    name: "South Park Commons",
+    dateRange: "2024-2025",
+    href: "https://www.southparkcommons.com",
+    image: spcImage,
+    imageClassName: "bg-white p-4",
+    description: <p className="text-gray-700">Member.</p>,
   },
   {
     name: "Navattic",
-    dateRange: "2024-2025",
+    dateRange: "2023-2024",
     href: "https://www.navattic.com",
     image: navatticImage,
     imageClassName: "bg-stone-100 p-6",
-    description: <p className="text-gray-700">Engineering new products.</p>,
+    description: <p className="text-gray-700">Engineering.</p>,
   },
   {
     name: "Manatee",
-    dateRange: "2022-2024",
+    dateRange: "2021-2023",
     image: manateeImage,
     description: (
       <p className="text-gray-700">
-        Distributed web-app caching/replay for GTM teams, YC S22.
-      </p>
-    ),
-  },
-  {
-    name: "Startup Shell",
-    dateRange: "2020-now",
-    image: startupShellImage,
-    description: (
-      <p className="text-gray-700">
-        UMD's home for creators and entrepreneurs.
+        Co-Founder and CEO. Acq by Navattic.
       </p>
     ),
   },
