@@ -32,16 +32,28 @@ export function DifficultyDriversSection() {
   return (
     <Section title="Learning is unpredictable">
       <p>
-        We categorize tasks based on three dimensions: predictability, burial depth, and number of learnings required. Predictability is how easy it is to predict what the agent will need to learn, manually categorized. Burial depth is how far back from the present task the required fact sits, as a percentage of the trace. Number of learnings required is how many separate facts from the trace must be learned and combined to pass the task.
+        Each task has three properties: predictability, burial depth, and number of learnings required.
       </p>
 
+      <p>
+        <strong>Predictability</strong> is how easy it is to predict what the agent will need to learn. Scratchpad-based approaches generally do well on highly predictable tasks, but badly on tasks that aren't predictable.
+      </p>
+
+      <p>
+        <strong>Burial depth</strong> is how far back from the present task the required fact sits, as a percentage of the trace.
+      </p>
+
+      <p>
+        <strong>Number of learnings</strong> required is how many separate facts from the trace must be learned and combined to pass the task. Some tasks only require the agent to learn a single thing, but others require the agent to learn a pattern across multiple facts.
+      </p>
 
       <DifficultyTrendFigures />
 
-      <p> 
-        All harnesses show similar patterns where predictability and number of learnings required are the clearest detractors. This makes sense, as Horizon's hardest tasks tend to be the least predictable and require more learnings. The data also suggests that agents are better at learning from their early and late experiences than their middle ones, similar to in-context rot.</p>
+      <p>
+        Horizon's hardest tasks tend to be the least predictable and require multiple learnings. The data also suggests that agents are better at learning from their early and late experiences than their middle ones, similar to in-context rot.
+      </p>
 
-        <p>Future work will prioritize tasks that are less predictable and require more learnings, like testing if the agent can recognize implicit but unexpected patterns in realistic traces.</p>
+      <p>Future work will prioritize tasks that are less predictable and require more learnings, like testing if the agent can recognize implicit but unexpected patterns in realistic traces.</p>
     </Section>
   );
 }
@@ -51,11 +63,11 @@ export function ModelLeverSection() {
   return (
     <Section title="Learning scales slowly">
       <p>
-        Models are slowly getting better at Horizon, suggesting that scaling pretraining and reinforcement learning improves a model's ability to learn from long-horizon traces. However, the <b>improvement rate</b> of models is much slower on hard tasks, suggesting that intelligence alone may not be enough to learn effectively from long-horizon traces.
+        Models are slowly getting better at Horizon, suggesting that scaling pretraining and reinforcement learning improves a model's ability to learn from long-horizon traces. However, the <b>improvement rate</b> of models is much slower on hard tasks, suggesting that the intelligence of models alone may not be enough to learn effectively from long-horizon traces.
       </p>
 
       <p>
-        Scaling test-time compute is weakly correlated with pass rate, but correlation varies widely between harnesses. Harnesses like OpenClaw and Hermes primarily rely on accumulating learnings over time for fast access at test time, while harnesses like RLM and RAG spend more tokens on searching the trace during the task. Our sample is small, but harnesses that accumulate do not seem to benefit from additional test-time scaling while harnesses that search do improve.
+        Using more tokens is weakly correlated with pass rate, but correlation varies widely between harnesses. Harnesses like OpenClaw and Hermes primarily rely on accumulating learnings over time for fast access at test time, while harnesses like RLM and RAG spend more tokens on searching the trace during the task. Our sample is small, but harnesses that accumulate do not seem to benefit from additional test-time scaling while harnesses that search do improve.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6">
@@ -64,7 +76,7 @@ export function ModelLeverSection() {
       </div>
 
       <p>
-        Importantly, none of the tasks in Horizon are challenging to reason through. When we ran an oracle with perfect context, it only used a few thousand tokens to successfully complete the task. This suggests that test-time scaling may not be necessary with the right harnesses.
+        Importantly, none of the tasks in Horizon are challenging to reason through. When we ran an oracle with perfect context, it only used a few thousand tokens to successfully complete the task.
       </p>
       
     </Section>

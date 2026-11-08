@@ -33,7 +33,7 @@ export default function Horizon() {
     >
       <Section>
         <p>
-          Horizon is derived from failures we saw running Claw-like agents with real customers over the last year. We believe the future will be full of persistent background agents that act by themselves, but the clear adoption bottleneck is that agents still cannot reliably learn over time.
+          Horizon is derived from failures we saw running long horizon claw-like agents with real customers over the last year. We believe the future will be full of persistent background agents that act by themselves, but the clear adoption bottleneck is that agents still cannot reliably learn over time.
         </p>
         <p>
           Horizon makes no distinction between models and harnesses, aiming instead to measure the learning ability of the agent.

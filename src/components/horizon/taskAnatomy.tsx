@@ -147,18 +147,16 @@ export function TaskAnatomySection() {
 
       <p>
         For example: months ago in this trace, the agent sent a worksheet as a{" "}
-        <code>.docx</code> attachment, the student could not open it on a
+        <code>.docx</code> attachment. But the student could not open it on a
         school-issued Chromebook, and part of the session was lost before a PDF
-        link worked. Nothing in that exchange is marked as a preference or a
-        rule; it is one failed handoff inside months of routine activity. When
-        a new request to send practice materials arrives, the task tests
-        whether the agent sends a PDF link on the first try. Lessons can be
-        anywhere in the trace, occur multiple times, or require multiple data
-        points to extract the required pattern.
+        link worked. Later, the agent needs to send more materials. The task
+        tests whether the agent sends a PDF link on the first try. Lessons can
+        be anywhere in the trace, occur multiple times, or require learning
+        from multiple data points to extract the pattern.
       </p>
       <p>
-        Horizon contains 195 tasks, but is private to prevent overfitting and
-        keep user data secure<sup>*</sup>. We have included a few example eval
+        Horizon contains 195 tasks, but is private to keep user data secure.
+        We have included a few example eval
         cases in our{" "}
         <a
           href="https://github.com/orinlabs/horizon-1"
