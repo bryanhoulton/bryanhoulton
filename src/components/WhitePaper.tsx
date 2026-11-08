@@ -41,7 +41,7 @@ export function ResearchArticle({
           <ArrowLeftIcon className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
           Home
         </Link>
-        <h1 className="mt-5 text-neutral-950" style={{ fontSize: 'clamp(2.75rem, 13.5vw, 7.5rem)', fontWeight: 600, lineHeight: 0.9, letterSpacing: '-0.055em' }}>
+        <h1 className="mt-5 text-neutral-950" style={{ fontSize: 'clamp(2.228rem, 10.935vw, 6.075rem)', fontWeight: 600, lineHeight: 0.9, letterSpacing: '-0.055em' }}>
           {title}
         </h1>
         <p className="mt-8 max-w-3xl text-xl font-medium leading-[1.28] text-neutral-950 sm:text-2xl">
