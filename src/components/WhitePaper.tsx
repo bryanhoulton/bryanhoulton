@@ -70,13 +70,13 @@ export function ResearchArticle({
           <img
             src={image.src}
             alt={image.alt}
-            className={cn("w-full", image.darkSrc && "block dark:hidden")}
+            className={cn("w-full", image.darkSrc && "block")}
           />
           {image.darkSrc && (
             <img
               src={image.darkSrc}
               alt={image.alt}
-              className="hidden w-full dark:block"
+              className="hidden w-full"
             />
           )}
         </figure>

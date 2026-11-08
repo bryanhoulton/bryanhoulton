@@ -208,17 +208,17 @@ export function HorizonChart({
       "px-3 py-1.5 rounded-md text-xs font-medium transition-colors cursor-pointer",
       active
         ? "bg-primary text-anti-primary"
-        : "bg-neutral-200 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:bg-neutral-300 dark:hover:bg-neutral-700",
+        : "bg-neutral-200 text-neutral-600 hover:bg-neutral-300",
     );
 
   return (
     <div className="mt-8 -ml-2 sm:-ml-10">
       <div className="flex flex-col items-start gap-4 mb-4 ml-2 sm:ml-10 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h4 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+          <h4 className="text-lg font-semibold text-neutral-800">
             Score vs. {metric.label}
           </h4>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+          <p className="text-sm text-neutral-500">
             Horizon (195 tasks), preview run; hover a point to reveal its
             model
           </p>
@@ -229,7 +229,7 @@ export function HorizonChart({
                 onMouseEnter={() => setHoveredType(type)}
                 onMouseLeave={() => setHoveredType(null)}
                 className={cn(
-                  "flex items-center gap-1.5 text-xs font-medium text-neutral-600 dark:text-neutral-300 cursor-pointer transition-opacity",
+                  "flex items-center gap-1.5 text-xs font-medium text-neutral-600 cursor-pointer transition-opacity",
                   hoveredType != null && hoveredType !== type && "opacity-40",
                 )}
               >
@@ -253,7 +253,7 @@ export function HorizonChart({
             label="Log scale"
             withBody
             className={cn(
-              "hover:!bg-neutral-100 dark:hover:!bg-neutral-800 disabled:dark:!bg-neutral-800",
+              "hover:!bg-neutral-100",
               metric.forceLinear && "opacity-40",
             )}
             styles={{
@@ -468,10 +468,10 @@ export function HorizonModelChart() {
 
   return (
     <div>
-      <h4 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+      <h4 className="text-lg font-semibold text-neutral-800">
         Same model, different harness
       </h4>
-      <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-3">
+      <p className="text-sm text-neutral-500 mb-3">
         Task completion for each model, split by harness.
       </p>
 
@@ -482,7 +482,7 @@ export function HorizonModelChart() {
             onMouseEnter={() => setHoveredHarness(h)}
             onMouseLeave={() => setHoveredHarness(null)}
             className={cn(
-              "flex items-center gap-1.5 text-xs font-medium text-neutral-600 dark:text-neutral-300 cursor-pointer transition-opacity",
+              "flex items-center gap-1.5 text-xs font-medium text-neutral-600 cursor-pointer transition-opacity",
               hoveredHarness != null && hoveredHarness !== h && "opacity-40",
             )}
           >
@@ -601,7 +601,7 @@ export function HorizonModelChart() {
         </svg>
       </div>
 
-      <p className="mt-2 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      <p className="mt-2 text-xs leading-relaxed text-neutral-500">
         Hover a harness to trace it across models. Preview run, subject to
         change.
       </p>
@@ -642,30 +642,30 @@ export function HorizonLeaderboard() {
 
   const winner = (v: number, max: number) =>
     v === max && max > 0
-      ? "bg-emerald-100 dark:bg-emerald-500/20 font-semibold text-emerald-700 dark:text-emerald-300"
+      ? "bg-emerald-100 font-semibold text-emerald-700"
       : "";
 
   return (
     <div className="overflow-x-auto">
       <table className="w-full text-sm border-collapse">
         <thead>
-          <tr className="border-b-2 border-neutral-300 dark:border-neutral-700 text-left">
-            <th className="py-2 pl-4 pr-4 font-semibold text-neutral-800 dark:text-neutral-200">
+          <tr className="border-b-2 border-neutral-300 text-left">
+            <th className="py-2 pl-4 pr-4 font-semibold text-neutral-800">
               Harness
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200">
+            <th className="py-2 px-4 font-semibold text-neutral-800">
               Best Model
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 px-4 font-semibold text-neutral-800 text-right">
               Overall
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 px-4 font-semibold text-neutral-800 text-right">
               Easy
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 px-4 font-semibold text-neutral-800 text-right">
               Medium
             </th>
-            <th className="py-2 pl-4 pr-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 pl-4 pr-4 font-semibold text-neutral-800 text-right">
               Hard
             </th>
           </tr>
@@ -674,9 +674,9 @@ export function HorizonLeaderboard() {
           {rows.map((row) => (
             <tr
               key={row.id}
-              className="border-b border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-800/50 transition"
+              className="border-b border-neutral-200 hover:bg-neutral-100 transition"
             >
-              <td className="py-2 pl-4 pr-4 text-neutral-700 dark:text-neutral-300">
+              <td className="py-2 pl-4 pr-4 text-neutral-700">
                 <span className="flex items-center gap-2">
                   <span
                     className="inline-block w-2.5 h-2.5 rounded-full shrink-0"
@@ -685,49 +685,49 @@ export function HorizonLeaderboard() {
                   <span className="font-medium">{displayAgentType(row.agentType)}</span>
                 </span>
               </td>
-              <td className="py-2 px-4 text-neutral-700 dark:text-neutral-300 tabular-nums">
+              <td className="py-2 px-4 text-neutral-700 tabular-nums">
                 {row.model}
               </td>
               <td
                 className={cn(
-                  "py-2 px-4 text-right tabular-nums font-medium text-neutral-800 dark:text-neutral-200",
+                  "py-2 px-4 text-right tabular-nums font-medium text-neutral-800",
                   winner(row.completion, maxOverall),
                 )}
               >
-                <span className="mr-1.5 font-normal text-neutral-400 dark:text-neutral-600">
+                <span className="mr-1.5 font-normal text-neutral-400">
                   {fmtCount(row.counts.overall)}
                 </span>
                 {fmtPct(row.completion)}
               </td>
               <td
                 className={cn(
-                  "py-2 px-4 text-right tabular-nums text-neutral-700 dark:text-neutral-300",
+                  "py-2 px-4 text-right tabular-nums text-neutral-700",
                   winner(row.difficulty.easy, maxEasy),
                 )}
               >
-                <span className="mr-1.5 text-neutral-400 dark:text-neutral-600">
+                <span className="mr-1.5 text-neutral-400">
                   {fmtCount(row.counts.easy)}
                 </span>
                 {fmtPct(row.difficulty.easy)}
               </td>
               <td
                 className={cn(
-                  "py-2 px-4 text-right tabular-nums text-neutral-700 dark:text-neutral-300",
+                  "py-2 px-4 text-right tabular-nums text-neutral-700",
                   winner(row.difficulty.medium, maxMedium),
                 )}
               >
-                <span className="mr-1.5 text-neutral-400 dark:text-neutral-600">
+                <span className="mr-1.5 text-neutral-400">
                   {fmtCount(row.counts.medium)}
                 </span>
                 {fmtPct(row.difficulty.medium)}
               </td>
               <td
                 className={cn(
-                  "py-2 pl-4 pr-4 text-right tabular-nums text-neutral-700 dark:text-neutral-300",
+                  "py-2 pl-4 pr-4 text-right tabular-nums text-neutral-700",
                   winner(row.difficulty.hard, maxHard),
                 )}
               >
-                <span className="mr-1.5 text-neutral-400 dark:text-neutral-600">
+                <span className="mr-1.5 text-neutral-400">
                   {fmtCount(row.counts.hard)}
                 </span>
                 {fmtPct(row.difficulty.hard)}
@@ -736,7 +736,7 @@ export function HorizonLeaderboard() {
           ))}
         </tbody>
       </table>
-      <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400 italic">
+      <p className="mt-3 text-xs text-neutral-500 italic">
         Preview run, subject to change.
       </p>
     </div>
@@ -759,26 +759,26 @@ export function HorizonTable({
     <div className={cn("overflow-x-auto", className)}>
       <table className="w-full text-sm border-collapse">
         <thead>
-          <tr className="border-b-2 border-neutral-300 dark:border-neutral-700 text-left">
-            <th className="py-2 pl-4 pr-4 font-semibold text-neutral-800 dark:text-neutral-200">
+          <tr className="border-b-2 border-neutral-300 text-left">
+            <th className="py-2 pl-4 pr-4 font-semibold text-neutral-800">
               Agent
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200">
+            <th className="py-2 px-4 font-semibold text-neutral-800">
               Model
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 px-4 font-semibold text-neutral-800 text-right">
               Released
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 px-4 font-semibold text-neutral-800 text-right">
               Completion
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 px-4 font-semibold text-neutral-800 text-right">
               Cost / task
             </th>
-            <th className="py-2 px-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 px-4 font-semibold text-neutral-800 text-right">
               Time / task
             </th>
-            <th className="py-2 pl-4 pr-4 font-semibold text-neutral-800 dark:text-neutral-200 text-right">
+            <th className="py-2 pl-4 pr-4 font-semibold text-neutral-800 text-right">
               Tokens / task
             </th>
           </tr>
@@ -792,14 +792,14 @@ export function HorizonTable({
               onMouseEnter={() => onHover?.(row.id)}
               onMouseLeave={() => onHover?.(null)}
               className={cn(
-                "border-b border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-800/50 transition",
+                "border-b border-neutral-200 hover:bg-neutral-100 transition",
                 (hoveredId != null || hoveredType != null) &&
                   hoveredId !== row.id &&
                   hoveredType !== row.agentType &&
                   "opacity-40",
               )}
             >
-              <td className="py-2 pl-4 pr-4 text-neutral-700 dark:text-neutral-300">
+              <td className="py-2 pl-4 pr-4 text-neutral-700">
                 <span className="flex items-center gap-2">
                   <span
                     className="inline-block w-2.5 h-2.5 rounded-full shrink-0"
@@ -808,35 +808,35 @@ export function HorizonTable({
                   <span className="font-medium">{displayAgentType(row.agentType)}</span>
                 </span>
               </td>
-              <td className="py-2 px-4 text-neutral-700 dark:text-neutral-300 tabular-nums">
+              <td className="py-2 px-4 text-neutral-700 tabular-nums">
                 {row.model}
               </td>
-              <td className="py-2 px-4 text-right tabular-nums text-neutral-700 dark:text-neutral-300">
+              <td className="py-2 px-4 text-right tabular-nums text-neutral-700">
                 {fmtDate(row.releaseDate)}
               </td>
-              <td className="py-2 px-4 text-right tabular-nums text-neutral-700 dark:text-neutral-300">
+              <td className="py-2 px-4 text-right tabular-nums text-neutral-700">
                 {fmtPct(row.completion)}
               </td>
-              <td className="py-2 px-4 text-right tabular-nums text-neutral-700 dark:text-neutral-300">
+              <td className="py-2 px-4 text-right tabular-nums text-neutral-700">
                 {row.costUsd != null ? fmtCost(row.costUsd) : "—"}
               </td>
-              <td className="py-2 px-4 text-right tabular-nums text-neutral-700 dark:text-neutral-300">
+              <td className="py-2 px-4 text-right tabular-nums text-neutral-700">
                 {row.timeSec != null ? fmtTime(row.timeSec) : "—"}
               </td>
-              <td className="py-2 pl-4 pr-4 text-right tabular-nums text-neutral-700 dark:text-neutral-300">
+              <td className="py-2 pl-4 pr-4 text-right tabular-nums text-neutral-700">
                 {row.tokensLabel ?? (row.tokens != null ? fmtTokens(row.tokens) : "—")}
               </td>
             </tr>
           ))}
         </tbody>
       </table>
-      <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400 italic">
+      <p className="mt-3 text-xs text-neutral-500 italic">
         Preview run, subject to change. All data was collected with proper user permissions.
           Download the{" "}
           <a
             href="/horizon-results.json"
             download
-            className="underline hover:text-neutral-700 dark:hover:text-neutral-300"
+            className="underline hover:text-neutral-700"
           >
             raw results (JSON)
           </a>.

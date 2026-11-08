@@ -25,13 +25,13 @@ function Figure({
   return (
     <figure className="my-8">
       {title && (
-        <figcaption className="mb-2 text-sm font-semibold text-neutral-800 dark:text-neutral-200">
+        <figcaption className="mb-2 text-sm font-semibold text-neutral-800">
           {title}
         </figcaption>
       )}
       {children}
       {caption && (
-        <figcaption className="mt-3 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+        <figcaption className="mt-3 text-xs leading-relaxed text-neutral-500">
           {caption}
         </figcaption>
       )}
@@ -52,12 +52,12 @@ export function TaskTimelineFigure() {
       <img
         src="/example_task.png"
         alt="A historical trace of millions of tokens over months, paired with a single new task. One slice of the trace is magnified to show a worksheet sent as a .docx failing to open on the student's Chromebook before a PDF link works; the task is a new request to send practice materials."
-        className="w-full block dark:hidden max-w-2xl"
+        className="w-full block max-w-2xl"
       />
       <img
         src="/example_task_dark.png"
         alt="A historical trace of millions of tokens over months, paired with a single new task. One slice of the trace is magnified to show a worksheet sent as a .docx failing to open on the student's Chromebook before a PDF link works; the task is a new request to send practice materials."
-        className="w-full hidden dark:block max-w-2xl"
+        className="w-full hidden max-w-2xl"
       />
     </Figure>
   );
@@ -83,13 +83,13 @@ function Outcome({
         className={
           "inline-block text-xs font-semibold px-2 py-0.5 rounded-full " +
           (pass
-            ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-400"
-            : "bg-red-100 text-red-700 dark:bg-red-500/15 dark:text-red-400")
+            ? "bg-emerald-100 text-emerald-700"
+            : "bg-red-100 text-red-700")
         }
       >
         {pass ? "✓ pass" : "✗ fail"}
       </span>
-      <p className="mt-2 text-[13px] leading-snug text-neutral-600 dark:text-neutral-300">
+      <p className="mt-2 text-[13px] leading-snug text-neutral-600">
         {children}
       </p>
     </div>
@@ -108,7 +108,7 @@ export function TaskOutcomes() {
         </>
       }
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-neutral-200 dark:divide-neutral-800">
+      <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-neutral-200">
         <Outcome pass={false} className="pb-4 sm:pb-0 sm:pr-8">
           Sends a <code>.docx</code> attachment by default, the student reports
           it won't open (the same failure it saw months ago), and session time

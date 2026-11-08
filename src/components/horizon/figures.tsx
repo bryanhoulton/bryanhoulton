@@ -139,13 +139,13 @@ function Figure({
   return (
     <figure className="my-8">
       {title && (
-        <figcaption className="mb-1 text-sm font-semibold text-neutral-800 dark:text-neutral-200">
+        <figcaption className="mb-1 text-sm font-semibold text-neutral-800">
           {title}
         </figcaption>
       )}
       {children}
       {caption && (
-        <figcaption className="mt-2 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+        <figcaption className="mt-2 text-xs leading-relaxed text-neutral-500">
           {caption}
         </figcaption>
       )}
@@ -412,9 +412,9 @@ export function SlopeSmallMultiples({
           const yb = sy(panel.right.value);
           return (
             <div key={panel.title} className="flex-1 min-w-[200px]">
-              <div className="text-xs font-semibold text-neutral-700 dark:text-neutral-300 text-center mb-1">
+              <div className="text-xs font-semibold text-neutral-700 text-center mb-1">
                 {panel.title}
-                <span className="ml-1 font-normal text-neutral-500 dark:text-neutral-400">
+                <span className="ml-1 font-normal text-neutral-500">
                   {panel.delta}
                 </span>
               </div>
@@ -946,7 +946,7 @@ export function ArchitectureSpreadFigure() {
         </>
       }
     >
-      <div className="flex items-center gap-4 mb-3 text-xs font-medium text-neutral-600 dark:text-neutral-300">
+      <div className="flex items-center gap-4 mb-3 text-xs font-medium text-neutral-600">
         <span className="flex items-center gap-1.5">
           <span
             className="inline-block w-2.5 h-2.5 rounded-full"
@@ -1034,7 +1034,7 @@ export function DifficultyAxesFigure() {
         </>
       }
     >
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-3 text-xs font-medium text-neutral-600 dark:text-neutral-300">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-3 text-xs font-medium text-neutral-600">
         {DIFFICULTY_FAMILIES.map((f) => (
           <div
             key={f.id}
@@ -1052,7 +1052,7 @@ export function DifficultyAxesFigure() {
             {f.label}
           </div>
         ))}
-        <div className="flex items-center gap-1.5 text-neutral-500 dark:text-neutral-400">
+        <div className="flex items-center gap-1.5 text-neutral-500">
           <span
             className="inline-block w-4 border-t-2 border-dashed"
             style={{ borderColor: axisStroke }}
@@ -1064,9 +1064,9 @@ export function DifficultyAxesFigure() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
         {DIFFICULTY_AXES.map((ax) => (
           <div key={ax.key}>
-            <div className="text-xs font-semibold text-neutral-700 dark:text-neutral-300 text-center mb-1">
+            <div className="text-xs font-semibold text-neutral-700 text-center mb-1">
               {ax.title}{" "}
-              <span className="font-normal text-neutral-500 dark:text-neutral-400">
+              <span className="font-normal text-neutral-500">
                 {ax.drop}
               </span>
             </div>
@@ -1201,14 +1201,14 @@ export function ContentFlagsFigure() {
         </ResponsiveContainer>
       </div>
 
-      <div className="mt-5 space-y-2 text-xs leading-relaxed text-neutral-600 dark:text-neutral-400">
+      <div className="mt-5 space-y-2 text-xs leading-relaxed text-neutral-600">
         {flags.map((f) => (
           <p key={f.label}>
             <span
               className="inline-block w-2 h-2 rounded-full mr-2 align-middle"
               style={{ background: f.value >= 0 ? pos : neg }}
             />
-            <span className="font-semibold text-neutral-800 dark:text-neutral-200">
+            <span className="font-semibold text-neutral-800">
               {f.label}
             </span>{" "}
             {f.desc}
@@ -1687,7 +1687,7 @@ export function DifficultyTrendFigures() {
     <Figure
       caption="Pass rate by harness across each axis level (easiest → hardest left to right), pooled across all models on that harness. Burial depth bins are equal-sized groups of tasks by how far back from the present task the required fact sits, as a % of the trace (deeper = older memory)."
     >
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-4 text-xs font-medium text-neutral-600 dark:text-neutral-300">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-4 text-xs font-medium text-neutral-600">
         {TREND_FAMILIES.map((f) => (
           <div
             key={f.id}
@@ -1721,10 +1721,10 @@ export function DifficultyTrendFigures() {
             }[ax.id] ?? ax.title;
           return (
           <div key={ax.id} className="flex flex-col">
-            <div className="text-xs font-semibold text-neutral-700 dark:text-neutral-300 text-center leading-tight min-h-[2rem]">
+            <div className="text-xs font-semibold text-neutral-700 text-center leading-tight min-h-[2rem]">
               <div>{ax.title}</div>
               {ax.subtitle && (
-                <div className="mt-0.5 text-[10px] font-normal text-neutral-500 dark:text-neutral-400 leading-snug">
+                <div className="mt-0.5 text-[10px] font-normal text-neutral-500 leading-snug">
                   {ax.subtitle}
                 </div>
               )}
@@ -1872,7 +1872,7 @@ export function AdversarialRobustnessFigure() {
         </>
       }
     >
-      <div className="flex items-center gap-4 mb-3 text-xs font-medium text-neutral-600 dark:text-neutral-300">
+      <div className="flex items-center gap-4 mb-3 text-xs font-medium text-neutral-600">
         <span className="flex items-center gap-1.5">
           <span
             className="inline-block w-2.5 h-2.5 rounded-full"
@@ -1960,7 +1960,7 @@ export function ConvergenceFigure() {
         </>
       }
     >
-      <div className="flex items-center gap-4 mb-2 text-xs font-medium text-neutral-600 dark:text-neutral-300">
+      <div className="flex items-center gap-4 mb-2 text-xs font-medium text-neutral-600">
         <span className="flex items-center gap-1.5">
           <span
             className="inline-block w-4 h-[2px]"
@@ -2202,7 +2202,7 @@ export function RecencyByDifficultyFigure() {
             onMouseEnter={() => setHoveredBucket(id)}
             onMouseLeave={() => setHoveredBucket(null)}
             className={cn(
-              "flex items-center gap-1.5 text-xs font-medium text-neutral-600 dark:text-neutral-300 cursor-pointer transition-opacity",
+              "flex items-center gap-1.5 text-xs font-medium text-neutral-600 cursor-pointer transition-opacity",
               dimBucket(id) && "opacity-40",
             )}
           >
@@ -2305,10 +2305,10 @@ export function RecencyByDifficultyFigure() {
                   top: flip ? hovered.y + 14 : hovered.y - 44,
                 }}
               >
-                <div className="text-[11px] font-semibold text-neutral-800 dark:text-neutral-200 whitespace-nowrap">
+                <div className="text-[11px] font-semibold text-neutral-800 whitespace-nowrap">
                   {displayAgentType(p.agentType)} - {p.model}
                 </div>
-                <div className="text-[10px] text-neutral-500 dark:text-neutral-400 whitespace-nowrap">
+                <div className="text-[10px] text-neutral-500 whitespace-nowrap">
                   {fmtPct(p.y)} on {p.bucket} tasks
                 </div>
               </div>
@@ -2449,7 +2449,7 @@ export function TokensVsPassFigure() {
             onMouseEnter={() => setHoveredHarness(h)}
             onMouseLeave={() => setHoveredHarness(null)}
             className={cn(
-              "flex items-center gap-1.5 text-xs font-medium text-neutral-600 dark:text-neutral-300 cursor-pointer transition-opacity",
+              "flex items-center gap-1.5 text-xs font-medium text-neutral-600 cursor-pointer transition-opacity",
               hoveredHarness != null && hoveredHarness !== h && "opacity-40",
             )}
           >
@@ -2461,7 +2461,7 @@ export function TokensVsPassFigure() {
             {(() => {
               const f = fits.find((x) => x.harness === h);
               return f ? (
-                <span className="font-normal text-neutral-400 dark:text-neutral-500">
+                <span className="font-normal text-neutral-400">
                   r={f.r >= 0 ? "+" : ""}
                   {f.r.toFixed(2)}
                 </span>
@@ -2556,10 +2556,10 @@ export function TokensVsPassFigure() {
                   top: flip ? hovered.y + 14 : hovered.y - 44,
                 }}
               >
-                <div className="text-[11px] font-semibold text-neutral-800 dark:text-neutral-200 whitespace-nowrap">
+                <div className="text-[11px] font-semibold text-neutral-800 whitespace-nowrap">
                   {displayAgentType(p.agentType)} - {p.model}
                 </div>
-                <div className="text-[10px] text-neutral-500 dark:text-neutral-400 whitespace-nowrap">
+                <div className="text-[10px] text-neutral-500 whitespace-nowrap">
                   {fmtPct(p.y)} · {fmtTokens(p.x)} tokens/task
                 </div>
               </div>

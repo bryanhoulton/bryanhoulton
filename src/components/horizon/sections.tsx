@@ -87,10 +87,10 @@ export function IntegritySection() {
           rubrics are consistent.
         </li>
         <li>
-          <strong>PerfectContext</strong>: for each task, we manually fed the
-          agent the important lines from the trace. We made sure that this
-          reliably scored 100% with low variance, showing that each task is
-          easily solvable with the right context.
+          <strong>PerfectContext</strong>: for each task, we told the agent
+          exactly where to find the important parts of the trace. We made sure
+          that this reliably scored 100% with low variance, showing that each
+          task is easily solvable with the right context.
         </li>
         <li>
           <strong>EnvironmentOnly</strong>: an agent that has no way to access
@@ -129,13 +129,13 @@ export function TakeawaysSection() {
 
 export function ParticipateSection() {
   return (
-    <p className="research-prose text-sm text-neutral-500 dark:text-neutral-400 mb-4">
+    <p className="research-prose text-sm text-neutral-500 mb-4">
       Building a long-horizon agent? Evaluate it against Horizon — see the{" "}
       <a
         href="https://github.com/orinlabs/horizon-1"
         target="_blank"
         rel="noopener noreferrer"
-        className="underline hover:text-neutral-700 dark:hover:text-neutral-300"
+        className="underline hover:text-neutral-700"
       >
         repo
       </a>
