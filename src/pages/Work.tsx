@@ -1,12 +1,14 @@
 import { ExternalLink } from "lucide-react";
 
-import manateeImage from "../assets/manatee.png";
+import acadiaImage from "../assets/acadia-light.png";
+import manateeImage from "../assets/manatee-light.png";
 import navatticImage from "../assets/navattic.png";
-import orinImage from "../assets/orinlabs.png";
+import orinImage from "../assets/orinlabs-white.svg";
 import spcImage from "../assets/spc.png";
 
 type Work = {
   name: string;
+  role: string;
   href?: string;
   image: string;
   imageClassName?: string;
@@ -17,36 +19,60 @@ type Work = {
 const work: Work[] = [
   {
     name: "Orin Labs",
+    role: "Founder and CEO",
     href: "https://orinlabs.ai",
     dateRange: "2025-2026",
     image: orinImage,
+    imageClassName: "p-2",
     description: (
-      <p className="text-gray-700">Co-Founder. AI agents for energy companies.</p>
+      <p className="text-gray-700">
+        Long-horizon agents for energy developers
+      </p>
+    ),
+  },
+  {
+    name: "Acadia Learning",
+    role: "Founder and CEO",
+    href: "https://acadialearning.org",
+    dateRange: "2024-2025",
+    image: acadiaImage,
+    imageClassName: "p-2",
+    description: (
+      <p className="text-gray-700">
+        Personalized AI tutors for families
+      </p>
     ),
   },
   {
     name: "South Park Commons",
+    role: "Member",
     dateRange: "2024-2025",
     href: "https://www.southparkcommons.com",
     image: spcImage,
-    imageClassName: "bg-white p-4",
-    description: <p className="text-gray-700">Member.</p>,
+    description: null,
   },
   {
     name: "Navattic",
+    role: "Software Lead",
     dateRange: "2023-2024",
     href: "https://www.navattic.com",
     image: navatticImage,
-    imageClassName: "bg-stone-100 p-6",
-    description: <p className="text-gray-700">Engineering.</p>,
-  },
-  {
-    name: "Manatee",
-    dateRange: "2021-2023",
-    image: manateeImage,
+    imageClassName: "p-6",
     description: (
       <p className="text-gray-700">
-        Co-Founder and CEO. Acq by Navattic.
+        Led integrations, new products, and component libraries
+      </p>
+    ),
+  },
+  {
+    name: "Manatee (YC S22)",
+    role: "Founder and CEO",
+    dateRange: "2021-2023",
+    image: manateeImage,
+    imageClassName: "p-2",
+    description: (
+      <p className="text-gray-700">
+        SaaS for making sales demos, acq by Navattic
       </p>
     ),
   },
@@ -70,12 +96,10 @@ export default function Work() {
               <img
                 src={work.image}
                 alt={work.name}
-                className={`aspect-square rounded-lg w-24 h-24 shrink-0 ${
-                  work.imageClassName ?? ""
-                }`}
+                className={`aspect-square rounded-lg w-24 h-24 shrink-0 bg-stone-100 group-hover:bg-white transition-colors ${work.imageClassName ?? "p-4"}`}
               />
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
                   <h4 className="text-2xl font-bold transition-colors">
                     {work.name}
@@ -84,6 +108,7 @@ export default function Work() {
                     ({work.dateRange})
                   </span>
                 </div>
+                <p className="text-gray-500 italic">{work.role}</p>
                 {work.description}
               </div>
 

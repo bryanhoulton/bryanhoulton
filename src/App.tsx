@@ -6,6 +6,7 @@ import {
 
 import {
   ArrowRightIcon,
+  CheckIcon,
   MenuIcon,
   XIcon,
 } from 'lucide-react';
@@ -63,6 +64,13 @@ const navButtons: NavButton[] = [
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeId, setActiveId] = useState(navButtons[0].id);
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText("brhoulton@gmail.com");
+    setEmailCopied(true);
+    setTimeout(() => setEmailCopied(false), 2000);
+  };
   const scrollRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const navigationType = useNavigationType();
@@ -158,7 +166,10 @@ function App() {
       <div className="md:hidden flex items-center justify-between p-4 border-b border-gray-200 flex-shrink-0">
         <div className="flex flex-col">
           <h1 className="text-2xl font-bold text-gray-900">Bryan Houlton</h1>
-          <span className="text-sm text-gray-500">brhoulton@gmail.com</span>
+          <span className="text-sm text-gray-500 cursor-pointer hover:text-gray-700 transition-colors flex items-center gap-1" onClick={copyEmail}>
+            brhoulton@gmail.com
+            {emailCopied && <CheckIcon className="w-3 h-3 text-green-500" />}
+          </span>
         </div>
         <button
           onClick={toggleMobileMenu}
@@ -223,8 +234,9 @@ function App() {
           Bryan<br></br>Houlton
         </h1>
 
-        <span className="text-sm text-gray-500 px-2 -mt-2">
+        <span className="text-sm text-gray-500 px-2 -mt-2 cursor-pointer hover:text-gray-700 transition-colors flex items-center gap-1 w-fit" onClick={copyEmail}>
           brhoulton@gmail.com
+          {emailCopied && <CheckIcon className="w-3 h-3 text-green-500" />}
         </span>
 
         <div className="flex flex-col grow gap-0.5 min-h-0 overflow-y-auto">
