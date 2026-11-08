@@ -39,7 +39,7 @@ const work: Work[] = [
     imageClassName: "p-2",
     description: (
       <p className="text-gray-700">
-        Personalized AI tutors for hundreds of families
+        Long-horizon tutors for hundreds of families
       </p>
     ),
   },
@@ -49,7 +49,7 @@ const work: Work[] = [
     dateRange: "2024-2025",
     href: "https://www.southparkcommons.com",
     image: spcImage,
-    description: null,
+    description: <p className="text-gray-700">Exploring neuroscience and long-horizon agents</p>,
   },
   {
     name: "Navattic",
