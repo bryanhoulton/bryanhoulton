@@ -39,7 +39,7 @@ const work: Work[] = [
     imageClassName: "p-2",
     description: (
       <p className="text-gray-700">
-        Personalized AI tutors for families
+        Personalized AI tutors for hundreds of families
       </p>
     ),
   },
