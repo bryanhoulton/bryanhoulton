@@ -6,8 +6,12 @@ import {
 
 import {
   ArrowRightIcon,
+  BookOpenIcon,
   CheckIcon,
+  LinkedinIcon,
+  MailIcon,
   MenuIcon,
+  TwitterIcon,
   XIcon,
 } from 'lucide-react';
 import { useLocation, useNavigationType } from 'react-router-dom';
@@ -25,6 +29,57 @@ type NavButton = {
   id: string;
   component: React.ComponentType;
 };
+
+type SocialLink = {
+  icon: React.ComponentType<{ className?: string }>;
+  href?: string;
+  copyValue?: string;
+  label: string;
+};
+
+const socialLinks: SocialLink[] = [
+  { icon: MailIcon, copyValue: "brhoulton@gmail.com", label: "Email" },
+  { icon: TwitterIcon, href: "https://x.com/bryan_houlton", label: "Twitter" },
+  { icon: LinkedinIcon, href: "https://www.linkedin.com/in/bryan-houlton/", label: "LinkedIn" },
+  { icon: BookOpenIcon, href: "https://bryanhoulton1.substack.com/", label: "Substack" },
+];
+
+function SocialButton({ link }: { link: SocialLink }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleClick = () => {
+    if (link.href) {
+      window.open(link.href, "_blank", "noopener,noreferrer");
+    } else if (link.copyValue) {
+      navigator.clipboard.writeText(link.copyValue);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  return (
+    <button
+      onClick={handleClick}
+      className="relative w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
+      title={link.label}
+    >
+      <link.icon
+        className="w-4 h-4 absolute transition-all duration-200"
+        style={{
+          transform: copied ? "scale(0)" : "scale(1)",
+          opacity: copied ? 0 : 1,
+        }}
+      />
+      <CheckIcon
+        className="w-4 h-4 absolute text-green-500 transition-all duration-200"
+        style={{
+          transform: copied ? "scale(1)" : "scale(0)",
+          opacity: copied ? 1 : 0,
+        }}
+      />
+    </button>
+  );
+}
 
 const navButtons: NavButton[] = [
   { label: "Home", id: "home", description: "hi :)", component: Home },
@@ -64,13 +119,7 @@ const navButtons: NavButton[] = [
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeId, setActiveId] = useState(navButtons[0].id);
-  const [emailCopied, setEmailCopied] = useState(false);
 
-  const copyEmail = () => {
-    navigator.clipboard.writeText("brhoulton@gmail.com");
-    setEmailCopied(true);
-    setTimeout(() => setEmailCopied(false), 2000);
-  };
   const scrollRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const navigationType = useNavigationType();
@@ -166,10 +215,11 @@ function App() {
       <div className="md:hidden flex items-center justify-between p-4 border-b border-gray-200 flex-shrink-0">
         <div className="flex flex-col">
           <h1 className="text-2xl font-bold text-gray-900">Bryan Houlton</h1>
-          <span className="text-sm text-gray-500 cursor-pointer hover:text-gray-700 transition-colors flex items-center gap-1" onClick={copyEmail}>
-            brhoulton@gmail.com
-            {emailCopied && <CheckIcon className="w-3 h-3 text-green-500" />}
-          </span>
+          <div className="flex -ml-1">
+            {socialLinks.map((link) => (
+              <SocialButton key={link.label} link={link} />
+            ))}
+          </div>
         </div>
         <button
           onClick={toggleMobileMenu}
@@ -234,10 +284,11 @@ function App() {
           Bryan<br></br>Houlton
         </h1>
 
-        <span className="text-sm text-gray-500 px-2 -mt-2 cursor-pointer hover:text-gray-700 transition-colors flex items-center gap-1 w-fit" onClick={copyEmail}>
-          brhoulton@gmail.com
-          {emailCopied && <CheckIcon className="w-3 h-3 text-green-500" />}
-        </span>
+        <div className="flex px-1 -mt-2">
+          {socialLinks.map((link) => (
+            <SocialButton key={link.label} link={link} />
+          ))}
+        </div>
 
         <div className="flex flex-col grow gap-0.5 min-h-0 overflow-y-auto">
           {navButtons.map((button) => (
