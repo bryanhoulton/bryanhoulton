@@ -21,7 +21,7 @@ const work: Work[] = [
     name: "Orin Labs",
     role: "Founder and CEO",
     href: "https://orinlabs.ai",
-    dateRange: "2025-2026",
+    dateRange: "2026",
     image: orinImage,
     imageClassName: "p-2",
     description: (
@@ -34,7 +34,7 @@ const work: Work[] = [
     name: "Acadia Learning",
     role: "Founder and CEO",
     href: "https://acadialearning.org",
-    dateRange: "2024-2025",
+    dateRange: "2025",
     image: acadiaImage,
     imageClassName: "p-2",
     description: (
