@@ -29,7 +29,7 @@ const artifacts: Artifact[] = [
     ),
   },
   {
-    title: "Dynamic Context",
+    title: "Dynamic context engineering",
     href: "https://context.bryanhoulton.com/",
     content: (
       <p>
