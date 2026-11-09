@@ -7,6 +7,7 @@ import {
 import {
   ArrowRightIcon,
   CheckIcon,
+  FilmIcon,
   LinkedinIcon,
   MailIcon,
   MenuIcon,
@@ -60,6 +61,7 @@ const socialLinks: SocialLink[] = [
   { icon: TwitterIcon, href: "https://x.com/bryan_houlton", label: "Twitter" },
   { icon: LinkedinIcon, href: "https://www.linkedin.com/in/bryan-houlton/", label: "LinkedIn" },
   { icon: SubstackIcon, href: "https://bryanhoulton1.substack.com/", label: "Substack" },
+  { icon: FilmIcon, href: "https://letterboxd.com/bryanhoulton/", label: "Letterboxd" },
 ];
 
 function SocialButton({ link }: { link: SocialLink }) {
