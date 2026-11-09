@@ -29,12 +29,12 @@ const artifacts: Artifact[] = [
     ),
   },
   {
-    title: "Streamable LLM Memory",
-    href: "https://memory.bryanhoulton.com/",
+    title: "Dynamic Context",
+    href: "https://context.bryanhoulton.com/",
     content: (
       <p>
-        Letting models do multi-hop reasoning over large memory banks in a
-        single turn.
+        What happens when an LLM’s context changes while it’s generating? Edit
+        its prompt, watch it retrieve memories, or speak while it reasons.
       </p>
     ),
   },
