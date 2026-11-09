@@ -6,7 +6,6 @@ import {
 
 import {
   ArrowRightIcon,
-  BookOpenIcon,
   CheckIcon,
   LinkedinIcon,
   MailIcon,
@@ -14,6 +13,25 @@ import {
   TwitterIcon,
   XIcon,
 } from 'lucide-react';
+
+function SubstackIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <line x1="4" y1="4" x2="20" y2="4" />
+      <line x1="4" y1="9" x2="20" y2="9" />
+      <path d="M4 14l8 6 8-6" />
+    </svg>
+  );
+}
 import { useLocation, useNavigationType } from 'react-router-dom';
 
 import Artifacts from './pages/Artifacts';
@@ -41,7 +59,7 @@ const socialLinks: SocialLink[] = [
   { icon: MailIcon, copyValue: "brhoulton@gmail.com", label: "Email" },
   { icon: TwitterIcon, href: "https://x.com/bryan_houlton", label: "Twitter" },
   { icon: LinkedinIcon, href: "https://www.linkedin.com/in/bryan-houlton/", label: "LinkedIn" },
-  { icon: BookOpenIcon, href: "https://bryanhoulton1.substack.com/", label: "Substack" },
+  { icon: SubstackIcon, href: "https://bryanhoulton1.substack.com/", label: "Substack" },
 ];
 
 function SocialButton({ link }: { link: SocialLink }) {
