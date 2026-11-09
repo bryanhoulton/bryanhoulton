@@ -57,26 +57,32 @@ function SocialButton({ link }: { link: SocialLink }) {
     }
   };
 
+  const Icon = link.icon;
+
   return (
     <button
       onClick={handleClick}
       className="relative w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
       title={link.label}
     >
-      <link.icon
-        className="w-4 h-4 absolute transition-all duration-200"
+      <span
+        className="absolute transition-all duration-200"
         style={{
           transform: copied ? "scale(0)" : "scale(1)",
           opacity: copied ? 0 : 1,
         }}
-      />
-      <CheckIcon
-        className="w-4 h-4 absolute text-green-500 transition-all duration-200"
+      >
+        <Icon className="w-4 h-4" />
+      </span>
+      <span
+        className="absolute transition-all duration-200"
         style={{
           transform: copied ? "scale(1)" : "scale(0)",
           opacity: copied ? 1 : 0,
         }}
-      />
+      >
+        <CheckIcon className="w-4 h-4 text-green-500" />
+      </span>
     </button>
   );
 }
