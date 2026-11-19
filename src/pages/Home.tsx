@@ -1,5 +1,5 @@
 import boardImage from "../assets/board.jpeg";
-import bugsImage2 from "../assets/bugs2.jpeg";
+import hallwayImage from "../assets/hallway.jpg";
 import lakesideGroupImage from "../assets/lakeside-group.jpg";
 import matchingSweatersImage from "../assets/matching-sweaters.jpg";
 import mountainLakeImage from "../assets/mountain-lake.jpg";
@@ -18,28 +18,8 @@ type GalleryImage = {
 function Home() {
   const galleryImages: GalleryImage[] = [
     {
-      src: parkImage,
-      alt: "Park",
-      span: "col-span-2 row-span-2 aspect-square",
-    },
-    {
-      src: tillieImage,
-      alt: "Tillie",
-      span: "col-span-2 row-span-2 aspect-square",
-    },
-    {
-      src: boardImage,
-      alt: "Board",
-      span: "col-span-3 row-span-2 aspect-video",
-    },
-    {
-      src: squatImage,
-      alt: "Squat",
-      span: "col-span-1 row-span-2",
-    },
-    {
-      src: lakesideGroupImage,
-      alt: "Friends together beside a lake",
+      src: hallwayImage,
+      alt: "Bryan in a cream hoodie, smiling in a hallway",
       span: "col-span-2 row-span-2 aspect-square",
     },
     {
@@ -48,9 +28,20 @@ function Home() {
       span: "col-span-2 row-span-2 aspect-square",
     },
     {
-      src: matchingSweatersImage,
-      alt: "Three friends wearing matching cable-knit sweaters",
+      src: squatImage,
+      alt: "Squat",
       span: "col-span-1 row-span-2",
+    },
+    {
+      src: boardImage,
+      alt: "Board",
+      span: "col-span-3 row-span-2 aspect-video",
+    },
+    { src: prImage, alt: "PR", span: "col-span-2 row-span-2 aspect-square" },
+    {
+      src: parkImage,
+      alt: "Park",
+      span: "col-span-2 row-span-2 aspect-square",
     },
     {
       src: sparkImage,
@@ -58,11 +49,20 @@ function Home() {
       span: "col-span-3 row-span-2 aspect-video",
     },
     {
-      src: bugsImage2,
-      alt: "Bugs2",
+      src: matchingSweatersImage,
+      alt: "Three friends wearing matching cable-knit sweaters",
+      span: "col-span-1 row-span-2",
+    },
+    {
+      src: tillieImage,
+      alt: "Tillie",
       span: "col-span-2 row-span-2 aspect-square",
     },
-    { src: prImage, alt: "PR", span: "col-span-2 row-span-2 aspect-square" },
+    {
+      src: lakesideGroupImage,
+      alt: "Friends together beside a lake",
+      span: "col-span-2 row-span-2 aspect-square",
+    },
   ];
 
   return (
