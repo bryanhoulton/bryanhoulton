@@ -8,7 +8,6 @@ import {
   ArrowRightIcon,
   CheckIcon,
   FilmIcon,
-  LinkedinIcon,
   MailIcon,
   MenuIcon,
   TwitterIcon,
@@ -59,7 +58,6 @@ type SocialLink = {
 const socialLinks: SocialLink[] = [
   { icon: MailIcon, copyValue: "brhoulton@gmail.com", label: "Email" },
   { icon: TwitterIcon, href: "https://x.com/bryan_houlton", label: "Twitter" },
-  { icon: LinkedinIcon, href: "https://www.linkedin.com/in/bryan-houlton/", label: "LinkedIn" },
   { icon: SubstackIcon, href: "https://bryanhoulton1.substack.com/", label: "Substack" },
   { icon: FilmIcon, href: "https://letterboxd.com/bryanhoulton/", label: "Letterboxd" },
 ];
